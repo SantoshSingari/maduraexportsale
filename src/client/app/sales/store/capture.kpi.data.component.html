@@ -1,0 +1,110 @@
+<div class="container-fluid  margin-top-65">
+          <h4 class="brandcolor1"> Upload Store KPI Data</h4>
+          <div class="panel panel-default form-panel">
+            <div class="panel-body">
+              <form class="form-horizontal"  (ngSubmit)="saveCaptureKpiData(kpiData)" #myForm="ngForm"  novalidate>
+			  <div class="row">
+			  	<div class="col-lg-10 col-md-10 col-sm-12 col-xs-12 col-lg-offset-1 col-md-offset-1">
+                  <country-store  (modified)="onCtryStoreChange($event)" 
+                  usrCtry={{usrCtry}} usrStore={{usrStore}}></country-store>
+                
+                  <div class="form-group">
+                     <div class="col-lg-5 col-md-5 col-lg-offset-1 col-md-offset-1">
+                        <div class="input-group"> <span class="input-group-addon min-width-100" id="basic-addon1">Sale Date</span>
+                          <p-calendar dateFormat="dd/mm/yy" [(ngModel)]="kpiData.date" name="date" [showIcon]="true" placeholder="dd/mm/yy" required></p-calendar>
+                        </div>
+                     </div>
+                  </div>
+                <div class="form-group margin-bottom-0">
+                  <div class="col-lg-5 col-md-6 col-lg-offset-1 col-md-offset-1 margin-bottom-15">
+                    <div class="input-group"> <span class="input-group-addon min-width-180" id="basic-addon1">No. Of Walk-Ins</span>
+                      <input type="text" class="form-control" placeholder="Enter Code" [(ngModel)]="kpiData.walkins" (keyup)="calculatedConversation(kpiData)"
+                       name="walkins" #walkins="ngModel" aria-describedby="basic-addon1"(keypress)="onlyNumber($event)" required>
+                    </div>
+                    <div [hidden]="walkins.valid || (walkins.pristine && !myForm.submitted)">
+                            <small class="text-danger">Please enter No. Of Walk-Ins</small>
+                       </div>
+                  </div>
+                </div>
+                <div class="form-group margin-bottom-0">
+                  <div class="col-lg-5 col-md-6 col-lg-offset-1 col-md-offset-1 margin-bottom-15">
+                    <div class="input-group"> <span class="input-group-addon min-width-180" id="basic-addon1">No. of Bills</span>
+                      <input type="text" class="form-control" (keypress)="onlyNumber($event)" (keyup)="calculatedConversation(kpiData);avgBillValue(kpiData);unitPerTransaction(kpiData)"
+                       [(ngModel)]="kpiData.noofbills" name="noofbills" #noofbills="ngModel"  aria-describedby="basic-addon1" required>
+                    </div>
+                     <div [hidden]="noofbills.valid || (noofbills.pristine && !myForm.submitted)">
+                            <small class="text-danger">Please enter No. of Bills</small>
+                           </div>
+                  </div>
+                  <div class="col-lg-4 col-md-5 margin-bottom-15">
+                    <div class="input-group"> <span class="input-group-addon min-width-180" id="basic-addon1">Conversion %</span>
+                      <input type="number" class="form-control" disabled="disabled" [ngModel]="kpiData.conversion  | number: '2.2-2'"
+                     name="conversion"   aria-describedby="basic-addon1">
+                     <!--Use format '3.2-5' : minIntegerDigits = 3 minFractionDigits = 2 maxFractionDigits = 5 -->
+                    </div>
+                  </div>
+                </div>
+               <div class="form-group margin-bottom-0">
+                  <div class="col-lg-5 col-md-6 col-lg-offset-1 col-md-offset-1 margin-bottom-15">
+                    <div class="input-group"> <span class="input-group-addon min-width-180" id="basic-addon1">No. of Pcs Sold</span>
+                      <input type="text" class="form-control" (keypress)="onlyNumber($event)" (keyup)="unitPerTransaction(kpiData)" [(ngModel)]="kpiData.noofpcsold"
+                      name="noofpcsold" #pcsold="ngModel"   aria-describedby="basic-addon1" required>
+                    </div>
+                    <div [hidden]="pcsold.valid || (pcsold.pristine && !myForm.submitted)">
+                            <small class="text-danger">Please enter No.of Pcs Sold</small>
+                           </div>
+                  </div>
+                  
+                  <div class="col-lg-4 col-md-5 margin-bottom-15">
+                    <div class="input-group"> <span class="input-group-addon min-width-180" id="basic-addon1">Store Area</span>
+                      <input type="number" class="form-control"  [ngModel]="storeArea" name="storearea"  disabled="disabled" aria-describedby="basic-addon1">
+                    </div>
+                  </div>
+               
+                  <!--<div class="col-lg-4 col-md-5 margin-bottom-15">
+                    <div class="input-group"> <span class="input-group-addon min-width-180" id="basic-addon1">No. Of Pcs Sold Per Bill</span>
+                      <input type="number" class="form-control"  [(ngModel)]="kpiData.noofpcsoldbill" name="noofpcsoldbill"  disabled="disabled" aria-describedby="basic-addon1">
+                    </div>
+                  </div>-->
+                </div>
+
+                 <div class="form-group margin-bottom-0">
+                  <div class="col-lg-5 col-md-6 col-lg-offset-1 col-md-offset-1 margin-bottom-15">
+                    <div class="input-group"> <span class="input-group-addon min-width-180" id="basic-addon1">Total Bills Value</span>
+                      <input type="text" class="form-control"  aria-describedby="basic-addon1" (keypress)="decimal($event)" 
+                      (keyup)="avgBillValue(kpiData);sspdValue(kpiData)"  [(ngModel)]="kpiData.totalbills" name="totalbills" #totalbills ="ngModel" required>
+                         </div>
+                           <div [hidden]="totalbills.valid || (totalbills.pristine && !myForm.submitted)">
+                            <small class="text-danger">Please enter total bills value</small>
+                           </div>
+                    </div>
+                     <div class="col-lg-4 col-md-5 margin-bottom-15">
+                    <div class="input-group"> <span class="input-group-addon min-width-180" id="basic-addon1">Average Bill Value</span>
+                      <input type="text" class="form-control" [ngModel]="kpiData.avgbillvalue | number: '2.2-2'" name="avgbillvalue"  disabled="disabled" aria-describedby="basic-addon1">
+                    </div>
+                  </div>
+                  </div>
+
+                 <div class="form-group margin-bottom-0">
+                  <div class="col-lg-5 col-md-6 col-lg-offset-1 col-md-offset-1 margin-bottom-15">
+                    <div class="input-group"> <span class="input-group-addon min-width-180" id="basic-addon1">SSPD</span>
+                      <input type="number" class="form-control" [ngModel]="kpiData.sspd | number: '2.2-2'" name="sspd"  disabled="disabled">
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-5 margin-bottom-15">
+                    <div class="input-group"> <span class="input-group-addon min-width-180" id="basic-addon1">Units per Transaction</span>
+                      <input type="number" class="form-control" [ngModel]="kpiData.unitspertransaction | number: '2.2-2'" name="unitspertransaction"  disabled="disabled" >
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                <div class="col-lg-5 col-md-5 col-lg-offset-1 col-md-offset-1 text-right"> 
+                      <button type="submit" [disabled]="!myForm.form.valid" class="btn btn-primary min-width-150" >Submit</button>
+                     </div>
+                </div>
+				      </div>
+			   </div>
+       </form>
+     </div>
+   </div>
+</div>

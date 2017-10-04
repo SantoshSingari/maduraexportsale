@@ -1,0 +1,25 @@
+<div class="container-fluid  margin-top-65">
+          <h4 class="table-head">Upload Store Pictures </h4>
+          <div class="panel panel-default form-panel">
+            <div class="panel-body">
+              <form class="form-horizontal"  enctype="multipart/form-data" (ngSubmit)="saveCapturePictureData(pictureCaptureData, $event);myForm.reset()" #myForm="ngForm"  novalidate>
+               <div class="row">
+                    <country-store display='summaryBlock' (modified)="onCtryStoreChange($event)"  usrCtry={{usrCtry}} usrStore={{usrStore}}> </country-store>
+                </div>
+         
+                   <div class="form-group">
+                       <input id="selectFile" #filecap type="file" multiple class="file"
+                        data-overwrite-initial="false" data-min-file-count="2" (remove)="fileChangeEvent($event)"  (change)="fileChangeEvent($event)"  [(ngModel)]="pictureCaptureData.image" name=image >
+                    </div>
+               
+                   <div class="form-group">
+                   <div class="text-center padding-bottom-25">
+                      <button type="submit" class="btn btn-lg btn-success min-width-150" >Submit</button>
+                   </div>
+                   </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+   

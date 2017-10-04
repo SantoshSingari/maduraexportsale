@@ -1,0 +1,75 @@
+<div class="container-fluid  margin-top-65" >
+   <h4 class="brandcolor1"> Upload Store Sales Data</h4>
+   <div class="panel panel-default form-panel">
+      <div class="panel-body">
+         <form class="form-horizontal" (ngSubmit)="saveCaptureSaleData(saleData)" #myForm="ngForm"  novalidate>
+            <div class="row">
+               <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12 col-lg-offset-1 col-md-offset-1">
+                 <country-store usrCtry={{usrCtry}} usrStore={{usrStore}} (modified)="onCtryStoreChange($event)"> </country-store>
+                  <div class="form-group">
+                     <div class="col-lg-5 col-md-5 col-lg-offset-1 col-md-offset-1">
+                        <div class="input-group"> <span class="input-group-addon min-width-100" id="basic-addon1">Sale Date</span>
+                          <p-calendar dateFormat="dd/mm/yy" [(ngModel)]="saleData.saleDate" name="saleDate" [showIcon]="true" placeholder="dd/mm/yy" required></p-calendar>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="form-group margin-bottom-0">
+                     <div class="col-lg-5 col-md-5 col-lg-offset-1 col-md-offset-1 margin-bottom-15">
+                        <div class="input-group"> <span class="input-group-addon min-width-100" id="basic-addon1">Style Code</span>
+                           <input type="text"  class="form-control" [(ngModel)]="saleData.styleCode"  name="styleCode" #name="ngModel" 
+                           placeholder="Enter Code"  aria-describedby="basic-addon1" required>
+                        </div>
+                         <div [hidden]="name.valid || (name.pristine && !myForm.submitted)">
+                            <small class="text-danger">Please Enter The StyleCode</small>
+                           </div>
+                     </div>
+                     <div class="col-md-6 margin-bottom-15"> Peter England <span class="glyphicon glyphicon-triangle-right orange"></span> Full Sleeve Shirt</div>
+                  </div>
+                  <div class="form-group margin-bottom-0">
+                     <div class="col-lg-5 col-md-5 col-lg-offset-1 col-md-offset-1 margin-bottom-15">
+                        <div class="input-group"> <span class="input-group-addon min-width-100" id="basic-addon1">Quantity</span>
+                           <input type="text" class="form-control" placeholder="Enter Quantity" 
+                           [(ngModel)]="saleData.quantity" (keyup)="calculateTotal(saleData)"   
+                           name="quantity" #quantity="ngModel" (keypress)="onlyNumber($event)" aria-describedby="basic-addon1" required>
+                        </div>
+                          <div [hidden]="quantity.valid || (quantity.pristine && !myForm.submitted)">
+                            <small class="text-danger">Please Enter The Quantity</small>
+                           </div>
+                     </div>
+                     <div class="col-lg-3 col-md-5 margin-bottom-15">
+                        <div class="input-group"> <span class="input-group-addon min-width-100" id="basic-addon1">Price</span>
+                           <input type="text" class="form-control" placeholder="Enter price" [(ngModel)]="saleData.price" #price="ngModel" name="price" 
+                           (keyup)="calculateTotal(saleData)"  (keypress)="decimal($event)" aria-describedby="basic-addon1" required >
+                        </div>
+                         <div [hidden]="price.valid || (price.pristine && !myForm.submitted)">
+                            <small class="text-danger">Please Enter The price</small>
+                           </div>
+                     </div>
+                  </div>
+                  <div class="form-group margin-bottom-0">
+                     <div class="col-lg-5 col-md-5 col-lg-offset-1 col-md-offset-1 margin-bottom-15">
+                        <div class="input-group"> <span class="input-group-addon min-width-100" id="basic-addon1">Discount %</span>
+                           <input type="number" [(ngModel)]="saleData.discount"  name="discount" class="form-control" max="{{max}}"
+                           (keyup)="calculateTotal(saleData)"  placeholder="Enter Discount" min="{{min}}"  #discount="ngModel"  aria-describedby="basic-addon1" required>
+                        </div>
+                         <div [hidden]="discount.valid || (discount.pristine && !myForm.submitted)">
+                            <small class="text-danger">Please Enter The Discount</small>
+                           </div>
+                     </div>
+                     <div class="col-lg-3 col-md-5 margin-bottom-15">
+                        <div class="input-group"> <span class="input-group-addon min-width-100" id="basic-addon1">Total</span>
+                           <input type="text" [(ngModel)]="saleData.total"  name="total"  class="form-control" disabled="disabled" aria-describedby="basic-addon1">
+                        </div>
+                     </div>
+                  </div>
+                  <div class="form-group">
+                     <div class="col-lg-5 col-md-5 col-lg-offset-1 col-md-offset-1 text-right"> 
+                      <button type="submit" [disabled]="!myForm.form.valid" class="btn btn-primary min-width-150" >Submit</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </form>
+      </div>
+   </div>
+</div>

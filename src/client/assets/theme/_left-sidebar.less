@@ -1,0 +1,508 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 29 Jul, 2016, 5:37:47 PM
+    Author     : Ahex
+*/
+
+.left-sidebar{
+    ul{   
+        margin       : 0; 
+        background   : #42527d;
+        padding-left : 0;
+        border-radius: 6px;
+        li{     
+            list-style: none;
+            margin    : 0 15px;
+            a{
+                color        : #8395c4;
+                display      : block; 
+                padding      : 10px 0 11px 40px;
+                position     : relative;    
+                font-size    : 16px;
+                list-style   : none;
+                font-family  : roboto-light, sans-serif;
+                border-bottom: 1px solid #293c63;
+                &:hover, &:active, &:focus, &.active:focus{
+                    text-decoration: none;
+                }
+                small{
+                    color      : #b2c1e9;
+                    display    : block;
+                    font-size  : 10px;
+                    font-family: roboto-light, sans-serif;
+                }
+                i{
+                    width     : 20px;
+                    height    : 20px;
+                    margin    : 0; 
+                    display   : inline-block;
+                    background: rgba(0, 0, 0, 0) url("../images/weather.png") no-repeat scroll;
+                    &.weather{
+                        background-color: rgba(0, 0, 0, 0) !important;
+                    }
+                    &.weather-home{                        
+                        top                : 17px;
+                        left               : -2px;
+                        position           : absolute;
+                        background-position: 0 -80px;
+                    }
+                    &.weather-room{                        
+                        top                : 10px;
+                        left               : -2px;
+                        position           : absolute;
+                        background-position: -39px -81px;
+                    }
+                    &.weather-camera{                           
+                        top                : 11px;
+                        left               : -2px;
+                        position           : absolute;
+                        background-position: -74px -81px;
+                    }
+                    &.weather-device{                        
+                        top                : 12px;
+                        left               : -2px;
+                        position           : absolute;
+                        background-position: -108px -81px;
+                    }
+                    &.weather-tracker{                        
+                        top                : 12px;
+                        left               : -2px;
+                        position           : absolute;
+                        background-position: -145px -81px;
+                    }
+                    &.weather-scenarios{                        
+                        top                : 12px;
+                        left               : -2px;
+                        position           : absolute;
+                        background-position: -181px -81px;
+                    }
+                    &.weather-calender{                        
+                        top                : 12px;
+                        left               : -2px;
+                        position           : absolute;
+                        background-position: -218px -81px;
+                    }
+                    &.weather-statistics{                        
+                        top                : 10px;
+                        left               : -2px;
+                        position           : absolute;
+                        background-position: -257px -81px;
+                    }
+                    &.weather-lock{                        
+                        top                : 10px;
+                        left               : -2px;
+                        position           : absolute;
+                        background-position: -61px -297px;
+                    }
+                }
+            }
+            &.active, &:active, &:hover, &:focus{
+                margin: 0;
+                a{
+                    color     : #fff;
+                    padding   : 10px 0 11px 55px; 
+                    background: #627199;
+                    i{
+                        left: 13px;
+                    }  
+                }
+            }
+            &:first-child{
+                border-radius: 6px 6px 0 0;
+                a{
+                    border-radius: 6px 6px 0 0;
+                }
+            }
+            &:last-child{
+                border-radius: 0 0 6px 6px;
+                a{
+                    border-radius: 0 0 6px 6px;
+                    border-bottom: none;
+                }
+            }
+            &.active, &:active, &:hover, &:focus{    
+                a{
+                    i{
+                        &.weather-home{                       
+                            background-position: -297px -80px;
+                        }
+                        &.weather-room{                        
+                            background-position: -336px -81px;
+                        }
+                        &.weather-camera{                        
+                            background-position: -372px -81px;
+                        }
+                        &.weather-device{                        
+                            background-position: -407px -81px;
+                        }
+                        &.weather-tracker{                        
+                            background-position: -444px -81px;
+                        }
+                        &.weather-scenarios{                           
+                            background-position: -480px -81px;
+                        }
+                        &.weather-calender{                        
+                            background-position: -517px -81px;
+                        }
+                        &.weather-statistics{                        
+                            background-position: -556px -81px;
+                        } 
+                        &.weather-lock{                        
+                            background-position: -61px -333px;
+                        } 
+                    }
+                }
+            }
+        }
+    }
+}
+.hidden-990{
+    display: none;
+}
+@media (min-width: 1200px) and (max-width: 1499px){
+    .left-sidebar {
+        ul {
+            li {
+                &.active{
+                    a{
+                        padding: 8px 0 8px 40px;
+                    }
+                    &:hover, &:focus, &.active{
+                        a{
+                            padding: 8px 0 8px 55px;
+                        }
+                    }   
+                }
+                a{
+                    padding: 8px 0 8px 40px;
+                }
+                &:hover, &:focus, &.active{
+                    a{
+                        padding: 8px 0 8px 55px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 991px) and (max-width: 1199px){
+    .left-sidebar{
+        width: 47px;
+        ul{
+            li{
+                margin: 0;
+                a{
+                    span{
+                        opacity    : 0;
+                        white-space: nowrap;
+                        small{
+                            display: none;
+                        }
+                    }
+                    i{
+                        left: 14px !important;
+                        &.weather-home{
+                            top: 11px;
+                        }
+                    }
+                }
+                &:hover{
+                    a{
+                        span{
+                            color         : #fff;
+                            opacity       : 1;
+                            padding       : 12px 20px 12px 11px;
+                            min-width     : 75px;
+                            background    : #627199;
+                            margin-left   : 8px;
+                            white-space   : nowrap;
+                            border-radius : 0 4px 4px 0;
+                            vertical-align: middle; 
+                        }
+                    }
+                }
+                &:last-child{
+                    border-radius: 0 0 0 6px;
+                }
+            }
+        }
+    }
+    .left-sidebar ul li.active a, 
+    .left-sidebar ul li:active a, 
+    .left-sidebar ul li:hover a, 
+    .left-sidebar ul li:focus a{
+        padding: 10px 0 11px 40px;
+    }
+}
+@media (min-width: 767px) and (max-width: 990px){
+    .hidden-990{
+        display: block;
+    }
+    .left-sidebar{
+        &.left {
+            top               : 0;
+            left              : -40%;
+            width             : 40%;
+            bottom            : 0;
+            z-index           : 9; 
+            position          : fixed;
+            background        : #42527d none repeat scroll 0 0; 
+            transition        : all 0.5s ease-in-out;
+            -o-transition     : all 0.5s ease-in-out;
+            -webkit-transition: all 0.5s ease-in-out;
+        }
+        ul{
+            border-radius: 0;
+            li{
+                border-radius: 0;
+                &:first-child{
+                    a{
+                        border-radius: 0; 
+                    }
+                }
+                &:last-child{
+                    a{
+                        border-radius: 0;
+                    }
+                }
+                a{
+                    border-radius: 0;
+                }
+            }
+        }
+    }  
+    .left-sidebar-small{
+        margin: 38px 10px;
+        img{
+            max-width: 150px;
+        }
+        .toggle {
+            right             : -40px;
+            width             : 30px;
+            height            : 25px;
+            border            : 0 none transparent;
+            position          : absolute;
+            background        : transparent none repeat scroll 0 0;
+            transition        : all 0.5s ease-in-out;
+            -o-transition     : all 0.5s ease-in-out;
+            -webkit-transition: all 0.5s ease-in-out;
+            .icon-bar {
+                top               : 2px;
+                left              : 0;
+                width             : 100%;
+                margin            : 0;
+                height            : 3px;
+                border            : 0 solid;
+                position          : absolute;
+                transform         : rotate(0deg);
+                background        : #8395C4;
+                transition        : all 0.25s ease-in-out 0s;
+                border-radius     : 4px;
+                -moz-transform    : rotate(0deg);
+                -moz-transition   : all 0.25s ease-in-out 0s;
+                -webkit-transform : rotate(0deg);
+                -webkit-transition: all 0.25s ease-in-out 0s;
+                &:nth-child(2) {
+                    top: 12px;
+                }
+                &:nth-child(5) {
+                    bottom: 0;
+                }
+                &:nth-child(3), &:nth-child(4) {
+                    top       : 50%;
+                    margin-top: 10px;
+                }
+            }
+            &.navbar-open{
+                .icon-bar{
+                    &:nth-child(3) {
+                        transform        : rotate(45deg);
+                        margin-top       : 0; 
+                        -moz-transform   : rotate(45deg);
+                        -webkit-transform: rotate(45deg);
+                    }
+                    &:nth-child(1) {
+                        transform        : rotate(-45deg);
+                        margin-top       : 10px; 
+                        -moz-transform   : rotate(-45deg);
+                        -webkit-transform: rotate(-45deg);
+                    }
+                    &:nth-child(2) {
+                        top  : 13px;
+                        left : 50%;
+                        width: 0;
+                    }
+                    &:nth-child(3) {
+                        transform        : rotate(45deg);
+                        -ms-transform    : rotate(45deg);
+                        -webkit-transform: rotate(45deg);
+                    }
+                    &:nth-child(4) {
+                        transform        : rotate(-45deg);
+                        -ms-transform    : rotate(-45deg);
+                        -webkit-transform: rotate(-45deg);
+                    }
+                    &:nth-child(5) {
+                        left  : 50%;
+                        width : 0;
+                        bottom: 13px;
+                    }
+                }
+            }
+        }
+    }
+    .left-sidebar-open{
+        .left-sidebar{
+            &.left{
+                left: 0;
+                .left-sidebar-small{
+                    .toggle{
+                        right: 15px;
+                    }    
+                }
+            }
+        }
+    }
+}
+@media (min-width: 320px) and (max-width: 766px){
+    .hidden-990{
+        display: block;
+    }
+    .left-sidebar{
+        &.left {
+            top               : 0;
+            left              : -60%;
+            width             : 60%;
+            bottom            : 0;
+            z-index           : 9; 
+            position          : fixed;
+            background        : #42527d none repeat scroll 0 0; 
+            transition        : all 0.5s ease-in-out;
+            -o-transition     : all 0.5s ease-in-out;
+            -webkit-transition: all 0.5s ease-in-out;
+        }
+        ul{
+            border-radius: 0;
+            li{
+                border-radius: 0;
+                &:first-child{
+                    a{
+                        border-radius: 0; 
+                    }
+                }
+                &:last-child{
+                    a{
+                        border-radius: 0;
+                    }
+                }
+                a{
+                    border-radius: 0;
+                }
+            }
+        }
+    }  
+    .left-sidebar-small{
+        margin: 38px 10px;
+        img{
+            max-width: 150px;
+        }
+        .toggle {
+            right             : -40px;
+            width             : 30px;
+            height            : 25px;
+            border            : 0 none transparent;
+            position          : absolute;
+            background        : transparent none repeat scroll 0 0;
+            transition        : all 0.5s ease-in-out;
+            -o-transition     : all 0.5s ease-in-out;
+            -webkit-transition: all 0.5s ease-in-out;
+            .icon-bar {
+                top               : 2px;
+                left              : 0;
+                width             : 100%;
+                margin            : 0;
+                height            : 3px;
+                border            : 0 solid;
+                position          : absolute;
+                transform         : rotate(0deg);
+                background        : #8395C4;
+                transition        : all 0.25s ease-in-out 0s;
+                border-radius     : 4px;
+                -moz-transform    : rotate(0deg);
+                -moz-transition   : all 0.25s ease-in-out 0s;
+                -webkit-transform : rotate(0deg);
+                -webkit-transition: all 0.25s ease-in-out 0s;
+                &:nth-child(2) {
+                    top: 12px;
+                }
+                &:nth-child(5) {
+                    bottom: 0;
+                }
+                &:nth-child(3), &:nth-child(4) {
+                    top       : 50%;
+                    margin-top: 10px;
+                }
+            }
+            &.navbar-open{
+                .icon-bar{
+                    &:nth-child(3) {
+                        transform        : rotate(45deg);
+                        margin-top       : 0; 
+                        -moz-transform   : rotate(45deg);
+                        -webkit-transform: rotate(45deg);
+                    }
+                    &:nth-child(1) {
+                        transform        : rotate(-45deg);
+                        margin-top       : 10px; 
+                        -moz-transform   : rotate(-45deg);
+                        -webkit-transform: rotate(-45deg);
+                    }
+                    &:nth-child(2) {
+                        top  : 13px;
+                        left : 50%;
+                        width: 0;
+                    }
+                    &:nth-child(3) {
+                        transform        : rotate(45deg);
+                        -ms-transform    : rotate(45deg);
+                        -webkit-transform: rotate(45deg);
+                    }
+                    &:nth-child(4) {
+                        transform        : rotate(-45deg);
+                        -ms-transform    : rotate(-45deg);
+                        -webkit-transform: rotate(-45deg);
+                    }
+                    &:nth-child(5) {
+                        left  : 50%;
+                        width : 0;
+                        bottom: 13px;
+                    }
+                }
+            }
+        }
+    }
+    .left-sidebar-open{
+        .left-sidebar{
+            &.left{
+                left: 0;
+                .left-sidebar-small{
+                    .toggle{
+                        right: 15px;
+                    }    
+                }
+            }
+        }
+    }
+}
+@media (min-width: 320px) and (max-width: 480px){
+    .left-sidebar{
+        &.left{
+         left : -100%;
+         width: 100%;
+        }
+    }
+}

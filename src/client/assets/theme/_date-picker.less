@@ -1,0 +1,46 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 9, 2016, 6:10:06 PM
+    Author     : Shukla
+*/
+
+
+.datepicker{
+    &.datepicker-dropdown{
+        width           : 350px;
+        background-color: #7c899d;
+        &.datepicker-orient-top{
+            &:after{
+                border-top: 7px solid #7c899d;
+            }
+        }
+        table{
+            width:100%;
+            td,th{  
+                color             : #fff;
+                transition        : all 0.3s ease-in-out;
+                -moz-transition   : all 0.3s ease-in-out;
+                -webkit-transition: all 0.3s ease-in-out;
+                &:hover,&.focused{
+                    background-color:#ffcc00
+                }
+            }
+            tr{
+                td{
+                    &.new,&.old{
+                        color: #333;
+                    }
+                    &.day{
+                        &:hover,&.focused,&.active{
+                            background:#ffcc00
+                        }
+                    }
+                }
+            }
+        }   
+    }  
+}   

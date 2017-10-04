@@ -1,0 +1,421 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 8, 2016, 12:15:19 PM
+    Author     : Shukla
+*/
+#modalInfo {
+  padding-right: 0 !important;
+}
+.modal-dialog {
+  color: #fff;
+  margin: 110px auto 0;
+  max-width: 550px;
+  background: #2a4b6c url("../images/main-bg.jpg") no-repeat scroll 0 0 / cover;
+  border-radius: 6px;
+}
+.modal-dialog .modal-content {
+  border-radius: 0;
+  background-color: transparent;
+}
+.modal-dialog .modal-content .modal-header {
+  padding: 0;
+  border-bottom: none;
+}
+.modal-dialog .modal-content .modal-header button.close {
+  top: 5px;
+  right: 5px;
+  width: 22px;
+  color: #fff;
+  cursor: pointer;
+  height: 22px;
+  z-index: 9;
+  opacity: 1;
+  position: absolute;
+  line-height: 0;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+.modal-dialog .modal-content .modal-header button.close span {
+  font-size: 20px;
+}
+.modal-dialog .modal-body {
+  padding: 50px 50px 40px 50px;
+}
+.modal-dialog .modal-body .modal-info-wrapper {
+  padding: 0;
+  list-style: none;
+}
+.modal-dialog .modal-body .modal-info-wrapper li {
+  float: left;
+  width: 50%;
+  padding: 0 0 40px 0;
+  text-align: center;
+}
+.modal-dialog .modal-body .modal-info-wrapper li img {
+  width: 75px;
+  height: 75px;
+  margin: 0 auto 25px;
+  display: block;
+  border-radius: 50%;
+}
+.modal-dialog .modal-body .modal-info-wrapper li:nth-child(1) {
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.modal-dialog .modal-body .modal-info-wrapper li:nth-child(1) span {
+  background-position: 7px 5px;
+}
+.modal-dialog .modal-body .modal-info-wrapper li:nth-child(2) {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.modal-dialog .modal-body .modal-info-wrapper li:nth-child(2) span {
+  background-position: -181px -122px;
+}
+.modal-dialog .modal-body .modal-info-wrapper li:nth-child(3) {
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+.modal-dialog .modal-body .modal-info-wrapper li:nth-child(3) span {
+  background-position: 7px -208px;
+}
+.modal-dialog .modal-body .modal-info-wrapper li:nth-child(4) span {
+  background-position: -91px -122px;
+}
+.modal-dialog .modal-body .modal-info-wrapper li:nth-child(3),
+.modal-dialog .modal-body .modal-info-wrapper li:nth-child(4) {
+  padding: 40px 0 0 0;
+}
+.modal-dialog .modal-body .modal-info-wrapper li p {
+  color: #fff;
+  margin: 0;
+  font-size: 16px;
+  font-family: roboto-regular, sans-serif;
+}
+.modal-dialog .modal-body .modal-info-wrapper li p.add-text {
+  cursor: pointer;
+}
+.modal-dialog .modal-body .modal-info-wrapper li div {
+  margin: 15px 0 0;
+}
+.modal-dialog .modal-body .modal-info-wrapper li div p {
+  font-size: 14px;
+  padding: 0 0 0 5px;
+}
+.modal-dialog .modal-body .modal-info-wrapper li div p strong {
+  font-weight: normal;
+  margin: 0 2px 0 0;
+}
+.modal-dialog .modal-body .modal-info-wrapper li span {
+  width: 75px;
+  height: 75px;
+  margin: 0 auto 25px auto;
+  display: block;
+  background: rgba(0, 0, 0, 0) url("../images/weather.png") no-repeat scroll;
+  background-position: 15px -285px;
+}
+.modal-dialog .modal-body .modal-info-wrapper li.car-item img {
+  width: 140px;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+}
+.modal-dialog .modal-body .modal-info-wrapper li.car-item img.plus-white {
+  width: 20px;
+  display: inline-block;
+  margin: 0 4px 0 0;
+}
+.modal-dialog .modal-body .modal-info-wrapper li.device-item img {
+  width: 50px;
+  height: auto;
+  margin: 0 auto 25px;
+  border-radius: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+}
+.modal-dialog .modal-body .modal-info-wrapper li.device-item img.plus-white {
+  width: 20px;
+  display: inline-block;
+  margin: 0 4px 0 0;
+}
+.modal-dialog .modal-body .modal-info-wrapper li.device-item:nth-child(4) img {
+  margin: -24px auto 10px;
+}
+.modal-dialog .modal-body .modal-info-wrapper li.multimedia-item img {
+  width: 50px;
+  height: auto;
+  margin: 0 auto 25px;
+  border-radius: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+}
+.modal-dialog .modal-body .modal-info-wrapper li.multimedia-item img.plus-white {
+  width: 20px;
+  display: inline-block;
+  margin: 0 4px 0 0;
+}
+.modal-dialog .modal-body .modal-info-wrapper li.multimedia-item:nth-child(2) img {
+  width: 40px;
+}
+.modal-dialog .modal-body .video-conference-wrapper {
+  padding: 0;
+  list-style: none;
+}
+.modal-dialog .modal-body .video-conference-wrapper li {
+  float: left;
+  width: 50%;
+  padding: 0 10px 10px;
+  text-align: center;
+  min-height: 180px;
+}
+.modal-dialog .modal-body .video-conference-wrapper li img {
+  width: 100%;
+  margin: 0 auto 10px;
+  display: block;
+  border-radius: 0;
+}
+.modal-dialog .modal-body .video-conference-wrapper li:nth-child(1) {
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.modal-dialog .modal-body .video-conference-wrapper li:nth-child(1) span {
+  background-position: 7px 5px;
+}
+.modal-dialog .modal-body .video-conference-wrapper li:nth-child(2) {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.modal-dialog .modal-body .video-conference-wrapper li:nth-child(2) span {
+  background-position: -181px -122px;
+}
+.modal-dialog .modal-body .video-conference-wrapper li:nth-child(3) {
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+.modal-dialog .modal-body .video-conference-wrapper li:nth-child(3) span {
+  background-position: 7px -208px;
+}
+.modal-dialog .modal-body .video-conference-wrapper li:nth-child(4) span {
+  background-position: -91px -122px;
+}
+.modal-dialog .modal-body .video-conference-wrapper li:nth-child(3),
+.modal-dialog .modal-body .video-conference-wrapper li:nth-child(4) {
+  padding: 10px 10px 0;
+}
+.modal-dialog .modal-body .video-conference-wrapper li p {
+  color: #fff;
+  margin: 0;
+  font-size: 16px;
+  font-family: roboto-regular, sans-serif;
+}
+.modal-dialog .modal-body .video-conference-wrapper li a {
+  text-decoration: none;
+}
+.modal-dialog .modal-body .video-conference-wrapper li span {
+  width: 75px;
+  height: 75px;
+  margin: 26px auto;
+  display: block;
+  background: rgba(0, 0, 0, 0) url("../images/weather.png") no-repeat scroll;
+  background-position: 15px -285px;
+}
+.modal-dialog .modal-body .video-conference-wrapper li.bulb img {
+  width: 70px;
+}
+.modal-dialog .modal-body .video-conference-wrapper li.bulb img.plus-white {
+  width: 20px;
+  display: inline-block;
+  margin: 0 10px 0;
+}
+.modal-dialog .modal-body .video-conference-wrapper li.bulb .add-text {
+  margin: 35px 0 0;
+}
+.modal-dialog .modal-body .video-conference-wrapper li.bulb .switch.yellow input + .slider {
+  background: #fff;
+  margin: 0;
+  width: 100%;
+  height: auto;
+  color: #333;
+  box-shadow: 0 0 1px #2196F3;
+  -moz-box-shadow: 0 0 1px #2196F3;
+  -webkit-box-shadow: 0 0 1px #2196F3;
+}
+.modal-dialog .modal-body .video-conference-wrapper li.bulb .switch.yellow input + .slider:before {
+  background: #ffcc00 !important;
+}
+.modal-dialog .modal-body .video-conference-wrapper li.bulb .switch.yellow input + .slider span {
+  background: transparent;
+  margin: 0;
+  width: auto;
+  height: auto;
+}
+.modal-dialog .modal-body .video-conference-wrapper li.bulb .switch.yellow input:checked + .slider {
+  margin: 0;
+  background: #ffcc00 !important;
+  width: 100%;
+  color: #fff;
+  height: auto;
+  box-shadow: 0 0 1px #2196F3;
+  -moz-box-shadow: 0 0 1px #2196F3;
+  -webkit-box-shadow: 0 0 1px #2196F3;
+}
+.modal-dialog .modal-body .video-conference-wrapper li.bulb .switch.yellow input:checked + .slider:before {
+  background: #fff !important;
+}
+.modal-dialog .modal-body .video-conference-wrapper li.bulb .switch.yellow input:checked + .slider span {
+  background: transparent;
+  margin: 0;
+  width: auto;
+  height: auto;
+}
+.modal-dialog .modal-body .modal-logo {
+  display: block;
+  margin-top: 40px;
+}
+.modal-dialog .modal-body .modal-logo img {
+  margin: 0 auto;
+  display: block;
+}
+.modal-dialog .modal-body .shop-now-wrapper {
+  padding: 0;
+  list-style: none;
+}
+.modal-dialog .modal-body .shop-now-wrapper:before,
+.modal-dialog .modal-body .shop-now-wrapper:after {
+  clear: both;
+  display: table;
+  content: "";
+}
+.modal-dialog .modal-body .shop-now-wrapper li {
+  width: 50%;
+  float: left;
+  padding: 20px 0;
+  min-height: 120px;
+  text-align: center;
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+.modal-dialog .modal-body .shop-now-wrapper li:nth-child(2) {
+  border-right: none;
+}
+.modal-dialog .modal-body .shop-now-wrapper li:nth-child(3) {
+  border-bottom: none;
+}
+.modal-dialog .modal-body .shop-now-wrapper li:nth-child(4) {
+  border-right: none;
+  border-bottom: none;
+}
+.modal-dialog .modal-body .shop-now-wrapper li a {
+  color: #fff;
+  margin: 0;
+  font-size: 20px;
+  font-family: roboto-regular, sans-serif;
+  text-decoration: none;
+}
+.modal-dialog .modal-body .shop-now-wrapper li a img {
+  width: 180px;
+  height: 160px;
+}
+.modal-dialog .modal-body .shop-now-wrapper li a small {
+  color: #fff;
+  margin: 0;
+  display: block;
+  font-size: 14px;
+  font-family: roboto-light, sans-serif;
+}
+#modalInfo2 ul li img {
+  width: 75px;
+  height: 75px;
+  margin: 0 auto 25px auto;
+  display: block;
+  border-radius: 50%;
+}
+#modalInfo2 ul li span {
+  background-position: 0 -121px;
+}
+.schedule-event-wrapper .modal-body {
+  padding: 25px;
+}
+.schedule-event-wrapper .modal-body .form-wrapper .control-label {
+  margin: 0 0 15px;
+}
+.schedule-event-wrapper .modal-body .form-wrapper .input-group {
+  margin: 0 0 15px;
+}
+.schedule-event-wrapper .modal-body .form-wrapper .input-group .form-control {
+  height: 40px;
+  padding: 9px 10px;
+}
+.schedule-event-wrapper .modal-body .form-wrapper .btn {
+  margin: 0 auto;
+  display: block;
+}
+.angularjs-datetime-picker {
+  z-index: 9999;
+}
+@media (min-width: 1200px) and (max-width: 1499px) {
+  .modal-dialog {
+    margin: 40px auto 0;
+  }
+}
+@media (min-width: 200px) and (max-width: 1199px) {
+  .modal-dialog {
+    margin: 30px auto 0;
+  }
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .modal-dialog {
+    width: 90%;
+  }
+  .modal-dialog .modal-body {
+    padding: 20px 20px 15px;
+  }
+  .modal-dialog .modal-body .modal-logo {
+    margin-top: 20px;
+  }
+}
+@media (min-width: 200px) and (max-width: 550px) {
+  .modal-dialog .modal-body .video-conference-wrapper li {
+    min-height: initial;
+  }
+  .modal-dialog .modal-body .video-conference-wrapper li:nth-child(4) span {
+    margin: 20px auto;
+  }
+  .modal-dialog .modal-body .video-conference-wrapper li img {
+    min-height: 160px;
+  }
+}
+@media (min-width: 200px) and (max-width: 480px) {
+  .modal-dialog {
+    width: 95%;
+  }
+  .modal-dialog .modal-body {
+    padding: 20px 20px 15px;
+  }
+  .modal-dialog .modal-body .shop-now-wrapper li a img {
+    width: 120px;
+    height: 110px;
+  }
+  .modal-dialog .modal-body .modal-logo {
+    margin-top: 20px;
+  }
+  .modal-dialog .modal-body .modal-logo img {
+    max-width: 150px;
+  }
+  .modal-dialog .modal-body .modal-info-wrapper li:nth-child(1),
+  .modal-dialog .modal-body .modal-info-wrapper li:nth-child(2) {
+    padding: 0 0 20px;
+  }
+  .modal-dialog .modal-body .modal-info-wrapper li:nth-child(3),
+  .modal-dialog .modal-body .modal-info-wrapper li:nth-child(4) {
+    padding: 20px 0 0;
+  }
+  .modal-dialog .modal-body .modal-info-wrapper li span {
+    margin: 0 auto 20px;
+  }
+  .modal-dialog .modal-body .modal-info-wrapper li p {
+    font-size: 14px;
+  }
+}

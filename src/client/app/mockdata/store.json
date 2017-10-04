@@ -1,0 +1,11 @@
+[
+    {"id":11,"countryCode":"AE","storeCode":"s123", "storeName":"UAE Store 1", "storeArea":163},
+    {"id":12,"countryCode":"AE","storeCode":"s124", "storeName":"UAE Store 2", "storeArea":173},
+    {"id":13,"countryCode":"AE","storeCode":"s125", "storeName":"UAE Store 3", "storeArea":183},
+    {"id":14,"countryCode":"NP","storeCode":"s234", "storeName":"Nepal Store 1", "storeArea":263},
+    {"id":15,"countryCode":"NP","storeCode":"s235", "storeName":"Nepal Store 2", "storeArea":273},
+    {"id":16,"countryCode":"QA","storeCode":"s334", "storeName":"Qatar Store 1", "storeArea":473},
+    {"id":20,"countryCode":"BD","storeCode":"s435", "storeName":"Bangladesh Store 1", "storeArea":573}
+  ]
+  
+  

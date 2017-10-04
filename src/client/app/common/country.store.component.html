@@ -1,0 +1,92 @@
+
+<div *ngIf="display=='Capture'; then captureBlock; else summaryBlock">this is ignored</div>
+<ng-template #captureBlock>
+<div class="form-group">
+  <div class="col-lg-4 col-md-4 col-lg-offset-1 col-md-offset-1">
+    <div class="input-group"> <span class="input-group-addon min-width-100" id="basic-addon1">Country</span>
+      <select class="form-control" [(ngModel)]=country name=country (change)="ctryChange($event.target.value)">
+          <option *ngFor="let ctry of countries" value={{ctry.countryCode}}>{{ctry.countryName}}</option>
+      </select>
+    </div>
+  </div>
+</div>
+<div class="form-group">
+  <div class="col-lg-4 col-md-4 col-lg-offset-1 col-md-offset-1">
+    <div class="input-group"> <span class="input-group-addon min-width-100" id="basic-addon1">Store</span>
+      <select class="form-control" [(ngModel)]=store name=store  (change)="getStoreArea()">
+        <option *ngFor="let str of stores" value={{str.storeCode}}>{{str.storeName}}</option>
+      </select>
+    </div>
+  </div>
+</div>
+
+<!--
+<div [(ngModel)]=storeArea> Store Area:  {{storeArea}} {{store}}</div>
+-->
+</ng-template>
+
+<ng-template #summaryBlock>
+
+  <div class="col-lg-2 col-md-3 col-sm-6 margin-bottom-10">
+      <select class="form-control" [(ngModel)]=country name=country (change)="ctryChange($event.target.value)">
+          <option *ngFor="let country of countries" value={{country.countryCode}}>{{country.countryName}}</option>
+      </select>
+  </div>
+
+
+<div class="col-lg-2 col-md-3 col-sm-6 margin-bottom-10">
+      <select class="form-control" [(ngModel)]=store name=store  (change)="getStoreArea()">
+        <option *ngFor="let store of stores" value={{store.storeCode}}>{{store.storeName}}</option>
+      </select>
+  </div>
+
+</ng-template>
+
+
+
+
+
+
+<!--<ng-template #summaryBlock>
+<div class="form-group">
+    <div class="input-group">
+      <select class=form-control [(ngModel)]=country name=country (change)="ctryChange($event.target.value)">
+          <option *ngFor="let country of countries" value={{country.countryCode}}>{{country.countryName}}</option>
+      </select>
+  </div>
+</div>
+<div class="form-group">
+    <div class="input-group">
+      <select class=form-control [(ngModel)]=store name=store  (change)="getStoreArea()">
+        <option *ngFor="let store of stores" value={{store.storeCode}}>{{store.storeName}}</option>
+      </select>
+    </div>
+</div>
+</ng-template>-->
+
+
+          <!--<div class="col-lg-2 col-md-3 col-sm-6 margin-bottom-10">
+            <select *ngIf="userCountry == undefined" class="form-control" (change)="onSelect($event.target.value)" [(ngModel)]="selectedCountry.id"
+              name="selectedCountry">
+                <option value="0">Select</option>
+                <option *ngFor="let country of countries" value={{country.id}}>{{country.name}}</option>
+               </select>
+            <select  *ngIf="userCountry != undefined" class="form-control"  [attr.disabled]="userCountry.id > 0 ? true : null"  (change)="onSelect($event.target.value)" [(ngModel)]="selectedCountry.id"
+              name="selectedCountry">
+                  <option *ngIf="userCountry != undefined"  value={{userCountry.id}} [attr.disabled]="userCountry.id > 0 ? true : null">{{userCountry.name}}  </option>
+              </select>
+          </div>
+          
+         <div class="col-lg-2 col-md-3 col-sm-6 margin-bottom-10">
+               <select *ngIf="userStore == undefined" class="form-control"  [(ngModel)]="selectedStore.id"
+              name="selectedStore">
+                <option value="0">Select</option>
+                <option *ngFor="let stores of stateStores" value={{stores.id}}>{{stores.name}}</option>
+               </select>
+            
+            <select  *ngIf="userStore != undefined" class="form-control"  [attr.disabled]="userStore.id > 0 ? true : null"   [(ngModel)]="selectedStore.id"
+              name="selectedStore">
+                  <option *ngIf="userStore != undefined"  value={{userStore.id}} [attr.disabled]="userStore.id > 0 ? true : null">{{userStore.name}}  </option>
+              </select>
+          </div>-->
+   

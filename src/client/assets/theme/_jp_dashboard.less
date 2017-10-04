@@ -1,0 +1,84 @@
+.main-container{
+    &.jp-main-container{
+        .custom-navbar{
+            .navbar-nav{
+                > li{
+                    > a{
+                        font-size: 21px;
+                    }
+                }
+            }
+        }
+
+        .content-top-wrapper{
+            ul{
+                li{
+                    position:relative;
+                    &:first-child{
+                         padding: 30px 15px 5px;
+                        span{
+                            &.blue{
+                                position: absolute;
+                                top:0;
+                                left:0;
+                            }
+                        }
+                    }
+                    &.mild-showers{
+                        img{
+                            width: 40px;
+                            margin: 19px auto;
+                        }
+                        .mild-showers-text{
+                            span{
+                                display: inline-block;
+                                margin: 0 0 0 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .content-middle-wrapper{
+            ul{
+                li{
+                    p {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+        .divider-woohoo {
+            width: 25%;
+            ul {
+                li {
+                    width: 50%;
+                    padding: 12px 0;
+                    text-align: center;
+                    float: left;
+                    &:first-of-type {
+                        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+                    }
+                    &:nth-child(2) {
+                        border-left: 1px solid rgba(255, 255, 255, 0.3);
+                        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+                    }
+                    &:last-of-type {
+                        border-left: 1px solid rgba(255, 255, 255, 0.3);
+                    }
+                    h3{
+                        font-size: 15px;
+                    }
+                    p{
+                        font-size: 11px;
+                    }
+                }
+            }
+        }
+        .content-bottom-wrapper .left-panel .security-privacy{
+            width:65px;
+            height: 75px;
+        }
+    }
+}

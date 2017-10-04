@@ -1,0 +1,461 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 29 Jul, 2016, 6:49:28 PM
+    Author     : Ahex
+*/
+.content-middle-wrapper {
+  width: 68%;
+  float: left;
+  display: inline-block;
+  padding: 0 15px;
+  vertical-align: top;
+}
+.content-middle-wrapper ul {
+  width: 100%;
+  margin: 0;
+  display: table;
+}
+.content-middle-wrapper ul li {
+  float: left;
+  width: 16.66%;
+  display: inline-block;
+  padding: 20px 0;
+  min-height: 190px;
+  text-align: center;
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+.content-middle-wrapper ul li a {
+  cursor: pointer;
+  display: block;
+  text-decoration: none;
+}
+.content-middle-wrapper ul li:last-child {
+  border-right: none;
+  border-bottom: none;
+}
+.content-middle-wrapper ul li:nth-child(6) {
+  border-right: none;
+}
+.content-middle-wrapper ul li:nth-child(10) p {
+  margin: 0 auto;
+  max-width: 80%;
+}
+.content-middle-wrapper ul li:nth-child(6) .mid-icons,
+.content-middle-wrapper ul li:nth-child(11) .mid-icons,
+.content-middle-wrapper ul li:nth-child(12) .mid-icons {
+  margin-bottom: 25px;
+}
+.content-middle-wrapper ul li:nth-child(7),
+.content-middle-wrapper ul li:nth-child(8),
+.content-middle-wrapper ul li:nth-child(9),
+.content-middle-wrapper ul li:nth-child(10),
+.content-middle-wrapper ul li:nth-child(11),
+.content-middle-wrapper ul li:nth-child(12) {
+  border-bottom: none;
+}
+.content-middle-wrapper ul li:nth-child(12) {
+  padding-top: 18px;
+}
+.content-middle-wrapper ul li #temperature {
+  margin-bottom: 20px;
+}
+.content-middle-wrapper ul li .carousel-control.left span {
+  top: 50%;
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  position: absolute;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0) url("../images/weather.png") repeat scroll 3px -844px;
+}
+.content-middle-wrapper ul li .carousel-control.right span {
+  top: 50%;
+  right: 15px;
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  position: absolute;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0) url("../images/weather.png") repeat scroll -23px -844px;
+}
+.content-middle-wrapper ul li .less-temp {
+  width: 20px;
+  height: 25px;
+  display: inline-block;
+  background: rgba(0, 0, 0, 0) url("../images/weather.png") repeat scroll -53px -839px;
+  vertical-align: middle;
+}
+.content-middle-wrapper ul li .high-temp {
+  width: 20px;
+  height: 25px;
+  display: inline-block;
+  background: rgba(0, 0, 0, 0) url("../images/weather.png") repeat scroll -91px -839px;
+  vertical-align: middle;
+}
+.content-middle-wrapper ul li .temp-meter {
+  margin: 0 15px;
+}
+.content-middle-wrapper ul li span.mid-icons {
+  width: 74px;
+  height: 74px;
+  margin: 0 0 15px 0;
+  display: inline-block;
+  background: rgba(0, 0, 0, 0) url("../images/weather.png") no-repeat scroll;
+}
+.content-middle-wrapper ul li span.img-joe {
+  background-position: 0px -122px;
+}
+.content-middle-wrapper ul li span.img-hye {
+  background-position: -165px -50px !important;
+  width: 50px !important;
+  height: 50px !important;
+  margin: 0;
+}
+.content-middle-wrapper ul li span.camera {
+  background-position: -91px -122px;
+}
+.content-middle-wrapper ul li span.heart-beat {
+  background-position: -181px -122px;
+}
+.content-middle-wrapper ul li span.heart-beat.checklist {
+  background: rgba(0, 0, 0, 0) url("../images/checklist.png") no-repeat scroll;
+  background-size: 88%;
+  background-position: initial;
+}
+.content-middle-wrapper ul li span.electricity {
+  background-position: -264px -122px;
+}
+.content-middle-wrapper ul li span.backyard {
+  background-position: -331px -121px;
+}
+.content-middle-wrapper ul li span.scenario {
+  background-position: -88px -285px;
+}
+.content-middle-wrapper ul li span.plus {
+  background-position: -408px -122px;
+}
+.content-middle-wrapper ul li span.home {
+  background-position: 7px -208px;
+}
+.content-middle-wrapper ul li span.bulb {
+  background-position: -72px -207px;
+}
+.content-middle-wrapper ul li span.temperature {
+  background-position: -144px -207px;
+}
+.content-middle-wrapper ul li span.music {
+  background-position: -220px -206px;
+}
+.content-middle-wrapper ul li span.tv {
+  background-position: -298px -205px;
+}
+.content-middle-wrapper ul li p {
+  color: #fff;
+  margin: 0;
+  font-size: 18px;
+  font-family: roboto-regular, sans-serif;
+}
+.content-middle-wrapper ul li p small {
+  color: #aabff2;
+  font-size: 16px;
+  font-family: roboto-light, sans-serif;
+}
+.content-middle-wrapper ul li p small.block {
+  display: block;
+}
+.content-middle-wrapper ul li.car-list-item img {
+  margin: -15px 0 15px;
+  width: 75px;
+}
+.content-middle-wrapper ul li.multimedia-list-item img {
+  width: 40px;
+  margin: 6px 0 30px;
+}
+.content-middle-wrapper ul.bottom-row li {
+  border-bottom: none;
+}
+@media (min-width: 1500px) and (max-width: 1750px) {
+  .content-middle-wrapper {
+    width: 62%;
+  }
+  .content-middle-wrapper ul li p {
+    font-size: 14px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1499px) {
+  .content-middle-wrapper {
+    width: 60%;
+    margin-top: 22px;
+  }
+  .content-middle-wrapper ul li {
+    padding: 10px 0;
+    min-width: 16.66%;
+    min-height: 136px;
+  }
+  .content-middle-wrapper ul li span.mid-icons {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    background: rgba(0, 0, 0, 0) url("../images/weather-small.png") no-repeat scroll 0 0;
+  }
+  .content-middle-wrapper ul li span.mid-icons.camera {
+    background-position: -60px 0;
+  }
+  .content-middle-wrapper ul li span.mid-icons.heart-beat {
+    background-position: -120px 0;
+  }
+  .content-middle-wrapper ul li span.mid-icons.heart-beat.checklist {
+    background: rgba(0, 0, 0, 0) url("../images/checklist.png") no-repeat scroll;
+    background-size: 88%;
+    background-position: initial;
+  }
+  .content-middle-wrapper ul li span.mid-icons.electricity {
+    background-position: -171px 0;
+  }
+  .content-middle-wrapper ul li span.mid-icons.backyard {
+    background-position: -214px 0;
+  }
+  .content-middle-wrapper ul li span.mid-icons.scenario {
+    background: rgba(0, 0, 0, 0) url("../images/weather.png") no-repeat scroll -175px -313px !important;
+  }
+  .content-middle-wrapper ul li span.mid-icons.plus {
+    background-position: -261px 0;
+  }
+  .content-middle-wrapper ul li span.mid-icons.home {
+    background-position: -313px 0;
+  }
+  .content-middle-wrapper ul li span.mid-icons.bulb {
+    background-position: -365px 0;
+  }
+  .content-middle-wrapper ul li span.mid-icons.temperature {
+    background-position: -409px 2px;
+  }
+  .content-middle-wrapper ul li span.mid-icons.music {
+    background-position: -459px 2px;
+  }
+  .content-middle-wrapper ul li span.mid-icons.tv {
+    background-position: -519px 2px;
+  }
+  .content-middle-wrapper ul li p {
+    font-size: 13px;
+  }
+  .content-middle-wrapper ul li p small {
+    font-size: 12px;
+  }
+  .content-middle-wrapper ul li:nth-child(3) {
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  .content-middle-wrapper ul li:nth-child(8) {
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: none;
+  }
+  .content-middle-wrapper ul li:nth-child(6) {
+    border-right: none;
+  }
+  .content-middle-wrapper ul li:nth-child(9) {
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: none;
+  }
+  .content-middle-wrapper ul li:nth-child(7) {
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: none;
+  }
+  .content-middle-wrapper ul li .temp-meter {
+    margin: 0 5px;
+  }
+}
+/*@media (min-width: 1200px) and (max-width: 1260px){
+    .content-middle-wrapper{
+        ul{
+            li{
+                p{
+                    font-size: 14px;
+                    small{
+                        font-size: 13px;
+                    }
+                }  
+            }
+        }
+    }
+}*/
+@media (min-width: 991px) and (max-width: 1199px) {
+  .content-middle-wrapper {
+    width: 70%;
+    margin-top: 25px;
+  }
+  .content-middle-wrapper.middle {
+    width: 77%;
+  }
+  .content-middle-wrapper ul li {
+    padding: 10px 0;
+    min-width: 16.66%;
+    min-height: 135px;
+  }
+  .content-middle-wrapper ul li span.mid-icons {
+    background: rgba(0, 0, 0, 0) url("../images/weather-small.png") no-repeat scroll 0 0;
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+  }
+  .content-middle-wrapper ul li span.mid-icons.camera {
+    background-position: -60px 0;
+  }
+  .content-middle-wrapper ul li span.mid-icons.heart-beat {
+    background-position: -120px 0;
+  }
+  .content-middle-wrapper ul li span.mid-icons.heart-beat.checklist {
+    background: rgba(0, 0, 0, 0) url("../images/checklist.png") no-repeat scroll;
+    background-size: 88%;
+    background-position: initial;
+  }
+  .content-middle-wrapper ul li span.mid-icons.electricity {
+    background-position: -171px 0;
+  }
+  .content-middle-wrapper ul li span.mid-icons.scenario {
+    background: rgba(0, 0, 0, 0) url("../images/weather.png") no-repeat scroll -175px -313px !important;
+  }
+  .content-middle-wrapper ul li span.mid-icons.backyard {
+    background-position: -214px 0;
+  }
+  .content-middle-wrapper ul li span.mid-icons.plus {
+    background-position: -261px 0;
+  }
+  .content-middle-wrapper ul li span.mid-icons.home {
+    background-position: -313px 0;
+  }
+  .content-middle-wrapper ul li span.mid-icons.bulb {
+    background-position: -365px 0;
+  }
+  .content-middle-wrapper ul li span.mid-icons.temperature {
+    background-position: -409px 2px;
+  }
+  .content-middle-wrapper ul li span.mid-icons.music {
+    background-position: -459px 2px;
+  }
+  .content-middle-wrapper ul li span.mid-icons.tv {
+    background-position: -519px 2px;
+  }
+  .content-middle-wrapper ul li p {
+    font-size: 13px;
+  }
+  .content-middle-wrapper ul li p small {
+    font-size: 12px;
+  }
+  .content-middle-wrapper ul li:nth-child(3) {
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  .content-middle-wrapper ul li:nth-child(8) {
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: none;
+    padding-top: 12px;
+  }
+  .content-middle-wrapper ul li:nth-child(8) span.mid-icons.bulb {
+    margin-bottom: 22px;
+  }
+  .content-middle-wrapper ul li:nth-child(6) {
+    padding-top: 10px;
+    border-right: none;
+  }
+  .content-middle-wrapper ul li:nth-child(7) {
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: none;
+  }
+  .content-middle-wrapper ul li:nth-child(9) {
+    padding-top: 15px;
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: none;
+  }
+  .content-middle-wrapper ul li:nth-child(10) {
+    padding-top: 15px;
+  }
+  .content-middle-wrapper ul li:nth-child(10) span.mid-icons.music {
+    margin-bottom: 18px;
+  }
+  .content-middle-wrapper ul li:nth-child(11) {
+    padding-top: 18px;
+  }
+  .content-middle-wrapper ul li .temp-meter {
+    margin: 0 5px;
+  }
+  .content-middle-wrapper ul:nth-child(12) {
+    padding-top: 15px;
+  }
+  .content-middle-wrapper ul #temperature {
+    margin-bottom: 12px;
+  }
+}
+@media (min-width: 767px) and (max-width: 990px) {
+  .content-middle-wrapper {
+    width: 60%;
+  }
+  .content-middle-wrapper ul li {
+    width: 33.33%;
+    padding: 10px 0 0;
+    min-height: 162px;
+  }
+  .content-middle-wrapper ul li span.mid-icons {
+    margin: 0 0 2px 0;
+  }
+  .content-middle-wrapper ul li p {
+    font-size: 14px;
+  }
+  .content-middle-wrapper ul li p small {
+    font-size: 13px;
+  }
+  .content-middle-wrapper ul li:nth-child(3) {
+    border-right: none;
+  }
+  .content-middle-wrapper ul li:nth-child(9) {
+    border-right: none;
+  }
+  .content-middle-wrapper ul li:nth-child(6) span.mid-icons,
+  .content-middle-wrapper ul li:nth-child(12) span.mid-icons {
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+  .content-middle-wrapper ul li:nth-child(7),
+  .content-middle-wrapper ul li:nth-child(8),
+  .content-middle-wrapper ul li:nth-child(9) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .content-middle-wrapper {
+    width: 60%;
+  }
+  .content-middle-wrapper ul li {
+    width: 33.33%;
+    padding: 10px 0 0;
+    min-height: 162px;
+  }
+  .content-middle-wrapper ul li span.mid-icons {
+    margin: 0 0 2px 0;
+  }
+  .content-middle-wrapper ul li p {
+    font-size: 14px;
+  }
+  .content-middle-wrapper ul li p small {
+    font-size: 13px;
+  }
+  .content-middle-wrapper ul li:nth-child(3) {
+    border-right: none;
+  }
+  .content-middle-wrapper ul li:nth-child(9) {
+    border-right: none;
+  }
+  .content-middle-wrapper ul li:nth-child(6) span.mid-icons,
+  .content-middle-wrapper ul li:nth-child(12) span.mid-icons {
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+  .content-middle-wrapper ul li:nth-child(7),
+  .content-middle-wrapper ul li:nth-child(8),
+  .content-middle-wrapper ul li:nth-child(9) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+}

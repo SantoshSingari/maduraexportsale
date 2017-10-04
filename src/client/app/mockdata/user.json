@@ -1,0 +1,65 @@
+[  
+   {  
+      "id":101,
+      "user":"user1",
+      "userCountry":"AE",
+      "userName":"UAE Store 3 Manager",
+      "type":"SM",
+      "storeCodes":"s124",
+      "password":123
+   },
+   {  
+      "id":102,
+      "user":"user2",
+      "userCountry":"AE",
+      "userName":"UAE Franchise Manager",
+       "type":"FM",
+      "storeCodes":"",
+      "password":1234
+   },
+   {  
+      "id":103,
+      "user":"user3",
+      "userCountry":"AE",
+      "userName":"UAE Store 2 Manager",
+       "type":"SM",
+      "storeCodes":"s124",
+      "password":12345
+   },
+   {  
+      "id":104,
+      "user":"user4",
+      "userCountry":"NP",
+      "userName":"Nepal Single Store Manager",
+       "type":"SM",
+      "storeCodes":"s234",
+      "password":123456
+   },
+   {  
+      "id":105,
+      "user":"user5",
+      "userCountry":"NP",
+      "userName":"Nepal Franchise Manager",
+       "type":"FM",
+      "storeCodes":"",
+      "password":1234567
+   },
+   {  
+      "id":106,
+      "user":"user6",
+      "userCountry":"QA",
+      "userName":"Qatar Single Store Manager",
+       "type":"SM",
+      "storeCodes":"s334",
+      "password":12345678
+   },
+   {  
+      "id":107,
+      "user":"user7",
+      "userCountry":"",
+      "userName":"Super User",
+       "type":"SU",
+      "storeCodes":"",
+      "password":123
+   }
+]

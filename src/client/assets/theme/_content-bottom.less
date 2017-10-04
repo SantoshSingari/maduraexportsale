@@ -1,0 +1,728 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 30, 2016, 6:30:06 PM
+    Author     : Shukla
+*/
+
+.content-bottom-wrapper{
+    margin-top   : 25px;
+    margin-bottom: 50px;
+    .left-panel{
+        text-align : center;
+        padding-top: 50px;
+        .security-privacy{
+            width              : 75px;
+            height             : 75px;
+            margin             : 0 auto 25px auto; 
+            display            : block;
+            background         : rgba(0, 0, 0, 0) url("../images/weather.png") no-repeat scroll;
+            background-position: 15px -285px;
+        }
+        p{
+            color      : #fff;
+            font-size  : 18px;
+            font-family: roboto-regular,sans-serif;
+        }
+    }
+    h4{
+        color      : #fff;
+        margin     : 0 0 10px 0; 
+        font-size  : 18px;
+        text-align : center; 
+        font-family: roboto-regular,sans-serif;
+        small{
+            color      : #aabff2;
+            margin     : 0; 
+            font-size  : 16px;
+            font-family: roboto-light,sans-serif;
+        }
+    }
+    .recently-ordered{
+        padding      : 15px 5px; 
+        background   : #265676;
+        list-style   : none;
+        border-radius: 6px;
+        li{
+            position     : relative;
+            padding      : 13px 0 13px 65px;
+            border-bottom: 1px solid rgba(255,255,255,.1);
+            span{
+                &.french-fries{
+                    left               : 5px;
+                    height             : 30px;
+                    content            : "";
+                    display            : inline-block;
+                    min-width          : 50px;
+                    position           : absolute;
+                    background-image   : url("../images/weather.png");
+                    background-position: 5px -876px;
+                }
+                &.red-dress{
+                    top                : 10px;
+                    left               : 5px;
+                    height             : 30px;
+                    content            : "";
+                    display            : inline-block;
+                    min-width          : 50px;
+                    position           : absolute;
+                    background-image   : url("../images/weather.png");
+                    background-position: -44px -876px;
+                }
+                &.nike-shoes{
+                    left               : 5px;
+                    height             : 30px;
+                    content            : "";
+                    display            : inline-block;
+                    min-width          : 50px;
+                    position           : absolute;
+                    background-image   : url("../images/weather.png");
+                    background-position: -96px -876px;
+                }
+            }
+            &:last-child{
+                border-bottom: none;
+            }
+            h3{
+                color      : #fff;
+                margin     : 0; 
+                font-size  : 18px;
+                font-family: roboto-regular,sans-serif;
+                span{
+                    display  : inline-block; 
+                    min-width: 110px;
+                }
+                small{
+                    color      : rgba(255,255,255,.5);
+                    font-size  : 15px;
+                    font-family: roboto-light,sans-serif; 
+                }
+            }
+            p{
+                color      : rgba(255,255,255,.5);
+                margin     : 5px 0 0; 
+                font-size  : 13px;
+                font-family: roboto-light,sans-serif; 
+            }
+            img{
+                top      : 50%;
+                left     : 28px;
+                position : absolute;
+                transform: translate(-18px, -50%);
+            }
+        }
+    }
+    .tracker-img{
+        min-width    : 100%;
+        border-radius: 6px;
+    }
+    .showcase-woohoo{
+        height       : 240px;
+        padding-right: 0;
+    }
+    .showcase-room, .showcase-woohoo, .showcase-tracker{
+        width: 25%;
+    }
+    &.jp-content-bottom-wrapper{
+        h4{
+            small{
+                font-size: 12px;
+            }
+        }
+        .family-tracker-wrapper{
+            .tracker-img{
+                height: 200px;
+            }
+        }
+        .mild-showers{
+            .rainy-cloud{
+                width: 40px;
+                height: 40px;
+                margin: 5px auto 15px;
+                min-width: 40px;
+                background-image: url(../images/weather-small.png);
+                background-position: 4px -1009px;
+            }
+        }
+    }
+}
+
+#livingRoom{
+    .carousel-control{
+        &.left{
+            span{
+                top       : 50%;
+                left      : 10px; 
+                width     : 20px;
+                height    : 38px;
+                display   : inline-block;
+                position  : absolute; 
+                transform : translateY(-50%); 
+                background: rgba(0, 0, 0, 0) url("../images/weather.png") repeat scroll -129px -832px;
+            }
+        }
+        &.right{
+            span{
+                top       : 50%;
+                width     : 20px;
+                height    : 38px;
+                display   : inline-block;
+                position  : absolute; 
+                transform : translateY(-50%); 
+                background: rgba(0, 0, 0, 0) url("../images/weather.png") repeat scroll -165px -832px;
+            }
+        }
+    }
+    .carousel-inner{
+        border-radius: 6px;
+        > .item{
+            height: 240px;
+            img{
+                height    : 240px;
+                min-width : 100%;
+            }
+        }
+    }  
+}
+.tracker-wrapper{
+    height       : 240px;    
+    border-radius: 6px;
+    img{
+        width      : 100%;
+        height     : 100%;
+        margin     : 0 auto;
+        min-width  : auto !important;
+    }
+}
+.carousel-control.left, .carousel-control.right{
+    opacity         : 1;
+    text-shadow     : none;
+    background-image: none;
+    span{
+        color: #1f2d50;
+    }
+}
+.carousel-control.right{
+    span{
+        right: 10px;
+    }
+}
+.visible-small{
+    display: none;
+}
+.hidden-small{
+    display: block;
+}
+
+.info-wrapper{
+    padding   : 0;
+    list-style: none;
+    &:before, &:after{
+        clear  : both; 
+        display: table;
+        content: "";
+    }
+    li{
+        width        : 50%;
+        float        : left;
+        padding      : 30px 0;
+        min-height   : 120px;
+        text-align   : center;
+        border-right : 1px solid rgba(255,255,255,0.3);
+        border-bottom: 1px solid rgba(255,255,255,0.3);
+        &:nth-child(1){
+            padding-top: 40px; 
+        }
+        &:nth-child(2){
+            padding-top : 40px; 
+            border-right: none;    
+        }
+        &:nth-child(3){
+            border-bottom: none;    
+        }
+        &:nth-child(4){
+            padding      : 30px 10px; 
+            border-right : none;    
+            border-bottom: none;    
+        }
+        a{
+            color          : #fff;
+            margin         : 0; 
+            font-size      : 20px;
+            font-family    : roboto-regular,sans-serif;
+            text-decoration: none;
+            small{
+                color      : #fff;
+                margin     : 0; 
+                display    : block; 
+                font-size  : 14px;
+                font-family: roboto-light,sans-serif;
+            }
+        }
+    }
+}
+
+
+
+@media (min-width: 1751px) and (max-width: 1800px){
+    /*    
+        .tracker-wrapper{
+            min-height: 260px;
+        }*/
+}
+@media (min-width: 1601px) and (max-width: 1750px){
+    .content-bottom-wrapper{
+        .recently-ordered {
+            padding: 19px 5px;
+            li{
+                padding: 10px 0 10px 55px;  
+                h3{
+                    font-size: 15px;
+                    span{
+                        min-width: 90px;
+                    }
+                    small{
+                        font-size: 14px;
+                    }
+                }
+                span{
+                    &.nike-shoes, &.red-dress, &.french-fries{
+                        left: 2px;
+                    }
+                }
+            }
+        }
+
+    }
+    .tracker-wrapper{
+        height: 222px;  
+    }
+    .right-panel {
+        .info-wrapper {
+            li {
+                a{
+                    font-size: 16px;
+                    small{
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+    #livingRoom {
+        .carousel-inner {
+            > .item{
+                height: 222px;
+            }
+        }
+    }
+}
+@media (min-width: 1500px) and (max-width: 1600px){
+    .content-bottom-wrapper{
+        .recently-ordered {
+            padding: 19px 5px;
+            li{
+                padding: 10px 0 10px 55px;  
+                h3{
+                    font-size: 15px;
+                    span{
+                        min-width: 85px;
+                    }
+                    small{
+                        font-size: 12px;
+                    }
+                }
+                span{
+                    &.nike-shoes, &.red-dress, &.french-fries{
+                        left: 2px;
+                    }
+                }
+            }
+        }
+
+    }
+    .tracker-wrapper{
+        height: 222px;  
+    }
+    .right-panel {
+        .info-wrapper {
+            li {
+                a{
+                    font-size: 16px;
+                    small{
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+    #livingRoom {
+        .carousel-inner {
+            > .item{
+                height: 222px;
+                img{
+                    height   : 222px;
+                    min-width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1499px){
+    .content-bottom-wrapper {
+        .left-panel {
+            a{
+                margin: 0 auto 15px;
+            }
+            p{
+                font-size: 14px;
+                br{
+                    display: none;
+                }
+            }
+        }
+        h4{
+            font-size: 14px;
+        }
+        .recently-ordered {
+            padding: 10px 5px;
+            li{
+                padding: 10px 0 10px 50px;  
+                h3{
+                    font-size: 15px;
+                    span{
+                        min-width: 85px;
+                    }
+                    small{
+                        font-size: 12px;
+                    }
+                }
+                span{
+                    &.nike-shoes, &.red-dress, &.french-fries{
+                        left: -2px;
+                    }
+                }
+            }
+        }
+    }
+    .tracker-wrapper,
+    .showcase-woohoo{
+        height: 200px;
+    }
+    #livingRoom {
+        .carousel-inner {
+            > .item {
+                height: 200px; 
+                img{
+                    height: 200px;
+                }
+            }
+        }
+    }
+    .right-panel {
+        .info-wrapper {
+            margin-top: 25px;
+            li {
+                padding   : 20px 0;
+                min-height: 95px;
+                a{
+                    font-size: 16px;
+                    small{
+                        font-size: 12px;
+                    }
+                }
+                &:nth-child(1),&:nth-child(2){
+                    padding-top: 25px;
+                }
+                &:last-child{
+                    padding: 20px 5px 0;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 1353px) and (max-width: 1499px){
+    .content-bottom-wrapper {
+        .recently-ordered {
+            padding: 8px 5px;
+        }
+    }
+}
+@media (min-width: 991px) and (max-width: 1199px){
+    .content-bottom-wrapper{
+        h4{
+            font-size: 14px;
+            small{
+                font-size: 13px;
+            }
+        }
+        .showcase-woohoo{
+            padding-left: 0;  
+            h4{
+                font-size : 14px;
+                min-height: 0; 
+            }
+        }
+        .recently-ordered{
+            li{
+                padding: 10px 0 8px 55px;
+                h3{
+                    font-size: 15px;
+                    span{
+                        min-width: 85px;
+                    }
+                    small{
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+        .showcase-room{
+            padding-left: 0;
+            h4{
+                font-size: 14px;
+                small{
+                    font-size: 13px;
+                }
+            }
+        }
+        .left-panel{
+            padding-top: 70px;
+            p{
+                font-size: 13px;
+                br{
+                    display: none;
+                }
+            }
+            .security-privacy{
+                margin: 0 auto 10px;
+            }
+        }
+        .right-panel {
+            margin-top: 20px;
+            .info-wrapper {
+                li {
+                    min-height: 6px;
+                    a{
+                        font-size: 14px;
+                        small{
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .visible-small{
+        display: block;
+    }
+    .hidden-small{
+        display: none;
+    }
+    .tracker-wrapper{
+        height: 205px;
+    }
+    #livingRoom {
+        .carousel-inner {
+            > .item{
+                height: 205px;
+                img{
+                    height: 205px;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 991px) and (max-width: 1021px){
+    .tracker-wrapper{
+        height: 222px;
+    }
+    #livingRoom {
+        .carousel-inner {
+            > .item{
+                height: 222px;
+                img{
+                    height: 222px;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 767px) and (max-width: 990px){
+    .content-bottom-wrapper{
+        margin-top: 40px;
+        .showcase-woohoo{
+            h4{
+                font-size : 14px;
+                min-height: 0; 
+            }
+        }
+        h4{
+            font-size : 14px;
+            min-height: 0; 
+        }
+        .recently-ordered {
+            padding: 23px 0;
+            li{
+                padding: 7px 0 8px 60px;
+                h3{
+                    font-size: 15px;
+                    span{
+                        min-width: 90px;
+                    }
+                    small{
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+    .showcase-tracker,
+    .showcase-room{
+        margin-bottom: 20px;
+    }
+    .showcase-room{
+        padding-right: 0;
+    }
+    .tracker-wrapper {
+        height: 213px;
+        img {
+            padding-top: 0;
+        }
+    }
+    .visible-small{
+        display: block;
+    }
+    .hidden-small{
+        display: none;
+    }
+    .right-panel {
+        .info-wrapper {
+            margin-top: 25px;
+            li {
+                padding   : 22px 0;
+                min-height: 100px;
+                a{
+                    font-size: 14px;
+                    small{
+                        font-size: 12px;
+                    }
+                }
+            }  
+        }
+    }
+    .left-panel{
+        p{
+            font-size: 14px;
+            br{
+                display: none;
+            }
+        }
+    }
+    .middle-panel {
+        .showcase-tracker{
+            padding: 0;
+        }
+    }
+    #livingRoom  {
+        .carousel-inner {
+            > .item{
+                height: 213px;
+                img{
+                    height: 213px;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 320px) and (max-width: 766px){
+    .content-bottom-wrapper{
+        .showcase-woohoo{
+            h4{
+                font-size : 14px;
+                min-height: 0; 
+            }
+        }
+        h4{
+            font-size : 14px;
+            min-height: 0; 
+        }
+        .recently-ordered {
+            padding: 23px 0;
+            li{
+                padding: 7px 0 8px 60px;
+                h3{
+                    font-size: 15px;
+                    span{
+                        min-width: 90px;
+                    }
+                    small{
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+    .showcase-tracker,
+    .showcase-room{
+        margin-bottom: 20px;
+    }
+    .showcase-room{
+        padding-right: 0;
+    }
+    .tracker-wrapper {
+        height: 213px;
+        img {
+            width      : 100%;
+            padding-top: 10px;
+        }
+    }
+    .visible-small{
+        display: block;
+    }
+    .hidden-small{
+        display: none;
+    }
+    .right-panel {
+        .info-wrapper {
+            margin-top: 25px;
+            li {
+                padding   : 22px 0;
+                min-height: 100px;
+                a{
+                    font-size: 14px;
+                    small{
+                        font-size: 12px;
+                    }
+                }
+            }  
+        }
+    }
+    .left-panel{
+        p{
+            font-size: 14px;
+            br{
+                display: none;
+            }
+        }
+    }
+    .middle-panel {
+        .showcase-tracker{
+            padding: 0;
+        }
+    }
+    #livingRoom .carousel-inner > .item {
+        height: 213px;
+    }
+}
+@media (max-width: 990px){
+    .content-bottom-wrapper {
+        .left-panel{
+            margin-top: 50px;
+        }
+    }
+}

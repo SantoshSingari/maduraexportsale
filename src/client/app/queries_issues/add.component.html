@@ -1,0 +1,104 @@
+<div class="container-fluid margin-top-65">
+   <h4 class="brandcolor1"> Queries &amp; Issues</h4>
+   <div class="panel panel-default form-panel">
+      <div class="panel-body">
+         <form class="form-horizontal" #myForm="ngForm" (ngSubmit)="addQueryIssueData(queryData)" novalidate>
+         <div class="row">
+            <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12 col-lg-offset-1 col-md-offset-1">
+                <div class="form-group">
+                <country-store display='summaryBlock' (modified)="onCtryStoreChange($event)" usrCtry={{usrCtry}} usrStore={{usrStore}}> </country-store>
+                 <div class="col-lg-2 col-md-3 col-sm-6">
+                    <div class="input-group date margin-bottom-10 datepick" id="datetimepicker1">
+                       <p-calendar dateFormat="dd/mm/yy"  name="date" [showIcon]="true" placeholder="Form" [(ngModel)]="queryData.date" ></p-calendar>
+                     </div>
+                 </div>
+                </div>
+               <div class="form-group">
+                  <label for="inputEmail3" class="col-lg-2 col-md-3 col-sm-4 control-label">Select</label>
+                  <div class="form-group">
+                     <div class="col-lg-2 col-md-5 col-sm-6">
+                        <div class="radio">
+                           <label class="padding-left-0">
+                           <input type="radio" name="query" value="query" #select="ngModel"  [(ngModel)]="queryData.select" required>
+                             <!--<input type="radio" name="query" value="query" [ngModel]="query.select" required>-->
+                           <span class="cr"><i class="cr-icon glyphicon glyphicon-ok orange"></i></span> Query
+                           </label>
+                        </div>
+                        <div class="radio">
+                           <label class="padding-left-0">
+                           <input type="radio" name="query" value="issue" #select="ngModel" [(ngModel)]="queryData.select" required>
+                           <!--<input type="radio" name="issue" value="issue" [ngModel]="query.select" required>-->
+                           <span class="cr"><i class="cr-icon glyphicon glyphicon-ok orange"></i></span> Issue
+                           </label>
+                        </div>
+                        <div [hidden]="select.valid || (select.pristine && !myForm.submitted)">
+                            <small class="text-danger">Please select the one</small>
+                       </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="form-group">
+                  <label for="inputEmail3" class="col-lg-2 col-md-3 col-sm-4 control-label">Type</label>
+                  <div class="col-lg-4 col-md-5 col-sm-6">
+                     <select class="form-control" name='type' [(ngModel)]='queryData.type'  #type="ngModel" required>
+                       <!--<option selected>Please Select</option>-->
+                       <option *ngFor="let type of typeData">{{type.name}}</option>
+                     </select>
+                  </div>
+                    <div [hidden]="type.valid || (type.pristine && !myForm.submitted)">
+                            <small class="text-danger">Please select the type</small>
+                       </div>
+               </div>
+               <div class="form-group">
+                  <label for="inputEmail3" class="col-lg-2 col-md-3 col-sm-4 control-label">Brand</label>
+                  <div class="col-lg-4 col-md-5 col-sm-6">
+                     <select class=form-control name='brand'  [(ngModel)]='queryData.brand'  #brand="ngModel"  required> 
+                      <!--<option selected>Please Select</option>-->
+                      <option *ngFor="let brand of brandData">{{brand.name}}</option>
+                     </select>
+                  </div>
+                  <div [hidden]="brand.valid || (brand.pristine && !myForm.submitted)">
+                            <small class="text-danger">Please select the brand</small>
+                       </div>
+               </div>
+               <div class="form-group">
+                  <label for="inputEmail3" class="col-lg-2 col-md-3 col-sm-4 control-label">Product</label>
+                  <div class="col-lg-4 col-md-5 col-sm-6">
+                     <select class="form-control" name='product' [(ngModel)]='queryData.product'  #product="ngModel"  required>
+                      <!--<option [value]="0">Please Select</option>-->
+                     <option *ngFor="let product of productData">{{product.name}}</option>
+                     </select>
+                  </div>
+                  <div [hidden]="product.valid || (product.pristine && !myForm.submitted)">
+                            <small class="text-danger">Please select the product</small>
+                       </div>
+               </div>
+               <div class="form-group">
+                  <label for="inputEmail3" class="col-lg-2 col-md-3 col-sm-4 control-label">Priority</label>
+                  <div class="col-lg-4 col-md-5 col-sm-6">
+                     <select class="form-control" name='priority' [(ngModel)]='queryData.priority' #priority="ngModel"  required>
+                       <!--<option [value]="0">Please Select</option>-->
+                      <option *ngFor="let priority of priorityData">{{priority.name}}</option>
+                     </select>
+                  </div>
+                  <div [hidden]="priority.valid || (priority.pristine && !myForm.submitted)">
+                            <small class="text-danger">Please select the priority</small>
+                       </div>
+               </div>
+               <div class="form-group">
+                  <label for="inputEmail3" class="col-lg-2 col-md-3 col-sm-4 control-label">Query/Issue Detail</label>
+                  <div class="col-lg-4 col-md-5 col-sm-6">
+                     <textarea class="form-control" rows="3" name="detail" placeholder="Up To 1000 Characters" [(ngModel)]='queryData.detail'></textarea>
+                  </div>
+               </div>
+               <div class="form-group">
+                  <div class="col-lg-5 col-md-7 col-sm-9 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 text-right">
+                     <button type="submit"  [disabled]="!myForm.form.valid" class="btn btn-primary min-width-150" >Submit</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         </form>
+      </div>
+   </div>
+</div>

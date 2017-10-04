@@ -1,0 +1,555 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 29 Jul, 2016, 3:20:41 PM
+    Author     : Ahex
+*/
+
+
+.content-top-wrapper{
+    width  : 68%;
+    margin : 0 auto 55px;
+    padding: 0;
+    display: table;
+    ul{
+        padding   : 0 15px;
+        margin    : 65px 0 0 0;
+        text-align: center;
+        li{
+            float         : left;
+            width         : 16.66%;
+            display       : table-cell;
+            min-height    : 155px;
+            vertical-align: top;
+            span{
+                &.sunny-cloud{
+                    height             : 65px;
+                    margin             : 5px auto 35px;
+                    display            : inline-block;
+                    content            : "";
+                    min-width          : 63px;
+                    background-image   : url("../images/weather.png");
+                    background-position: 0 -948px;
+                }
+                &.cloud-stats{
+                    height             : 65px;
+                    margin             : 8px auto 12px;
+                    display            : inline-block;
+                    content            : "";
+                    min-width          : 68px;
+                    background-image   : url("../images/weather.png");
+                    background-position: -80px -948px;
+                }
+            }
+            img{
+                &.cloud-stats{
+                    height: 60px;
+                }
+            }
+            &:nth-child(3){
+                width  : 33.32%;
+                padding: 0; 
+                img{
+                    min-width    : 100%;
+                    height       : 168px;
+                    border-radius: 6px;
+                }
+            }            
+            &:nth-child(4){
+                width: 33.32%;
+            }            
+            p{
+                color      : #fff;
+                margin     : 0;
+                font-size  : 22px;
+                text-align : left;
+                font-family: roboto-regular, sans-serif;
+            }
+            span{
+                color      : #fff;
+                font-size  : 18px;
+                font-family: roboto-light, sans-serif;
+                &.blue{
+                    color       : #aabff2;
+                    font-size   : 20px;
+                    margin-right: 8px;
+                }
+            }
+            &:first-child{
+                padding     : 22px 15px 5px; 
+                border-right: 1px solid rgba(255,255,255,0.3);
+                img{
+                    height: 70px;
+                    margin: 5px auto 33px;
+                }
+                p{
+                    span{
+                        float      : right;
+                        color      : #fff;
+                        font-size  : 22px;
+                        font-family: roboto-regular, sans-serif;
+                    }
+                }
+            }
+            img{
+                display: block;
+                margin: 0 auto;
+            }  
+            &.mild-showers{
+                padding: 10px 0 0 0;
+                img{
+                    margin: 15px auto;
+                }
+                p{
+                    text-align: center;
+                }
+            }
+            &:last-child{
+                padding : 45px 0 0 170px;
+                position: relative;
+                img{
+                    top      : 50%;
+                    left     : 36px;
+                    position : absolute;
+                    transform: translate(0px, -50%);
+                }
+                p{
+                    margin-top: 15px;
+                }
+            }
+            .profile-desc{
+                text-align: left;
+            }
+        }  
+    }
+}
+
+@media (min-width: 1501px) and (max-width: 1750px){
+    .content-top-wrapper{  
+        width  : 62%;
+        ul{
+            margin : 30px 0 0;
+            li{
+                &:first-child{
+                    padding: 10px 15px 5px;
+                    p{
+                        span{
+                            font-size : 18px; 
+                        }
+                    }
+                    img{
+                        margin: 5px auto 25px;
+                    }
+                }
+                &.mild-showers{
+                    padding: 0;
+                    span{
+                        font-size: 15px;
+                        &.blue{
+                            font-size: 16px;
+                        }
+                        &.cloud-stats{
+                            margin: 5px auto 10px;
+                        }
+                    }
+                }
+                &:last-child {
+                    padding: 45px 0 0 115px;
+                    img {
+                        top      : 50%;
+                        left     : 13px;
+                        max-width: 85px;
+                    }
+                    p{
+                        margin-top: 5px;
+                    }
+                }
+                p{
+                    font-size : 18px; 
+                    margin-top: 5px;
+                    span{
+                        font-size : 18px; 
+                    }
+                }
+                &:nth-child(3) {
+                    img{
+                        height: 155px;
+                    }
+                }
+                span{
+                    &.sunny-cloud{
+                        margin: 5px auto 28px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 1501px) and (max-width: 1546px){
+    .content-top-wrapper {
+        ul {
+            li {
+                img{
+                    &.cloud-stats {
+                        height: 45px;
+                    }
+                }
+                &:first-child{
+                    img{
+                        margin: 5px auto 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 1200px) and (max-width: 1500px){
+    .content-top-wrapper{
+        width : 60%;
+        margin: 0 auto 30px;
+        ul{
+            margin: 30px 0 0;
+            li{
+                min-width : 16.66%;
+                min-height: 114px;
+                span{
+                    font-size       : 13px;
+                    &.blue{
+                        font-size   : 12px;
+                        margin-right: 4px; 
+                    }
+                    &.sunny-cloud{
+                        width              : 40px;
+                        height             : 40px;
+                        margin             : 5px auto 15px;
+                        min-width          : 40px;
+                        background-image   : url("../images/weather-small.png");
+                        background-position: 4px -1009px; 
+                    }
+                    &.cloud-stats{
+                        width              : 40px;
+                        height             : 40px;
+                        margin             : 5px auto 15px;
+                        min-width          : 40px;
+                        background-image   : url("../images/weather-small.png");
+                        background-position: -51px -1006px; 
+                    }
+                }
+                img{
+                    &.cloud-stats {
+                        height: 65px;
+                        margin: 0 auto !important;
+                    }
+                }
+                p{
+                    font-size: 14px;
+                    small{
+                        font-size: 14px;
+                    }
+                }
+                &:first-child{
+                    padding: 10px 5px 5px;
+                    p{
+                        span{
+                            font-size: 14px; 
+                        }
+                    }
+                    img{
+                        margin: 5px auto 1px;
+                    }
+                }
+                &.mild-showers{
+                    padding: 0;
+                }
+                &:nth-child(3) {
+                    img{
+                        height   : 114px;
+                        min-width: 95%;   
+                    }
+                }
+                &:last-child{
+                    padding: 28px 0 0 95px;
+                    img{
+                        left     : 10px;
+                        max-width: 75px;
+                    }
+                    p{
+                        margin-top: 10px;
+                    }
+                }
+            }
+        } 
+    }
+}  
+@media (min-width: 1200px) and (max-width: 1301px){
+    .content-top-wrapper ul li img.cloud-stats {
+        height: 45px;
+        margin: 0 auto !important;
+    }
+}
+@media (min-width: 991px) and (max-width: 1199px){
+    .content-top-wrapper{
+        width  : 70%; 
+        margin : 0 auto 30px;
+        padding: 0 15px; 
+        display: table;
+        ul{
+            margin : 30px 0 0;
+            padding: 0;
+            li{
+                min-width : 16.66%;
+                min-height: 110px;
+                span{
+                    font-size       : 13px;
+                    &.blue{
+                        font-size   : 12px;
+                        margin-right: 4px; 
+                    }
+                    &.sunny-cloud{
+                        width              : 40px;
+                        height             : 40px;
+                        margin             : 5px auto 20px;
+                        min-width          : 40px;
+                        background-image   : url("../images/weather-small.png");
+                        background-position: 4px -1009px; 
+                    }
+                    &.cloud-stats{
+                        width              : 40px;
+                        height             : 40px;
+                        margin             : 5px auto 15px;
+                        min-width          : 40px;
+                        background-image   : url("../images/weather-small.png");
+                        background-position: -51px -1006px; 
+                    }
+                }
+                &.mild-showers{
+                    img{
+                        margin: 2px auto;
+                    }
+                }
+                p{
+                    font-size: 14px;
+                    small{
+                        font-size: 14px;
+                    }
+                }
+                &:first-child{
+                    padding: 15px 10px 0;
+                    p{
+                        span{
+                            font-size: 14px; 
+                        }
+                    }
+                    img{
+                        height: 64px;
+                        margin: 5px auto 1px;
+                    }
+                }
+                &:nth-child(3) {
+                    img{
+                        height: 110px;  
+                    }
+                }
+                &:last-child{
+                    padding: 28px 0 0 95px;
+                    img{
+                        left     : 10px;
+                        max-width: 75px;
+                    }
+                    p{
+                        margin-top: 10px;
+                    }
+                }
+                &.mild-showers{
+                    padding: 0;
+                }
+            }
+        } 
+    }
+}  
+@media (min-width: 991px) and (max-width: 1119px){
+    .content-top-wrapper ul li.mild-showers img {
+        height: 40px;
+        margin: 2px auto;
+    }
+}
+@media (min-width: 767px) and (max-width: 990px){
+    .content-top-wrapper{
+        width  : 100%; 
+        margin : 0 auto 30px;
+        padding: 0 15px;
+        display: table;
+        ul{
+            margin : 0;
+            padding: 0;
+            li{
+                width     : 19.5%;
+                min-height: auto;
+                &:first-child {
+                    padding:0 5px;
+                    p{
+                        font-size: 16px;
+                        span{
+                            font-size: 16px;
+                        }
+                    }
+                    img{
+                        margin: 5px auto 25px;
+                    }
+                }
+
+                &.mild-showers{
+                    padding: 0;
+                    span{
+                        font-size: 12px;
+                        &.blue{
+                            font-size   : 14px;
+                            margin-right: 2px;
+                        }
+                    }
+                    img{
+                        margin: 9px auto;
+                    }
+                }
+                &:last-child{
+                    padding : 45px 0 0 90px;
+                    position: relative;
+                    span{
+                        font-size: 14px;
+                        &.blue{
+                            font-size   : 13px;
+                            margin-right: 2px;
+                        }
+                    }
+                    img {
+                        left     : 10px;
+                        max-width: 70px;
+                    }
+                    p{
+                        margin-top: 5px;
+                    }
+                }
+                &:nth-child(3),&:nth-child(4){
+                    width: 30.5%;
+                }
+                &:nth-child(3){
+                    img{
+                        height: 122px;
+                    }   
+                }
+                &:last-child{
+                    padding   : 40px 0 0 90px; 
+                    min-height: 122px;
+                }
+                p{
+                    font-size: 16px;
+                }
+                .bridge-img{
+                    height: 122px;
+                }
+                span{
+                    &.sunny-cloud{
+                        margin: 5px auto 25px;
+                    }
+                    &.cloud-stats{
+                        margin: 8px auto 0;
+                    }
+                }
+                &.mild-showers{
+                    padding: 0 0;
+                }
+            }  
+        } 
+    }
+}  
+@media (min-width: 320px) and (max-width: 766px){
+    .content-top-wrapper{
+        width  : 100%; 
+        margin : 0 auto 30px;
+        padding: 0 15px;
+        display: table;
+        h1{
+            font-size   : 18px;
+            padding-left: 45px;
+        }
+        ul{
+            margin : 0;
+            padding: 0;
+            li{
+                min-width: 19.5%;
+                min-height: auto;
+                &:first-child {
+                    padding:0 5px;
+                    p{
+                        font-size: 16px;
+                        span{
+                            font-size: 16px;
+                        }
+                    }
+                    img{
+                        margin: 5px auto 25px;
+                    }
+                }
+                &:nth-child(3) {
+                    width: 30%;
+                    img{
+                        height: 120px;
+                    }
+                }
+
+                &.mild-showers{
+                    padding: 0 5px;
+                    span{
+                        font-size: 15px;
+                        &.blue{
+                            font-size   : 14px;
+                            margin-right: 2px;
+                        }
+                    }
+                }
+                &:last-child{
+                    width   : 31%;
+                    padding : 38px 0 0 80px;
+                    height  : 122px;
+                    position: relative;
+                    span{
+                        font-size: 14px;
+                        &.blue{
+                            font-size   : 15px;
+                            margin-right: 2px;
+                        }
+                    }
+                    img {
+                        left     : 10px;
+                        max-width: 65px;
+                    }
+                    p{
+                        margin-top: 5px;
+                    }
+                }
+                p{
+                    font-size: 16px;
+                }
+
+                span{
+                    &.sunny-cloud{
+                        margin: 5px auto 25px;
+                    }
+                    &.cloud-stats{
+                        margin: 8px auto 0;
+                    }
+                }
+                &.mild-showers{
+                    padding: 0 5px;
+                    img{
+                        height: 55px;
+                        margin: 0 auto;
+                    }
+                }
+            }  
+        } 
+    }
+}  

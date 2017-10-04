@@ -1,0 +1,46 @@
+<div class="container-fluid margin-top-65" >
+          <h4 class="table-head">Stores KPI Data Summary </h4>
+          <div class="panel panel-default form-panel">
+            <div class="panel-body">
+              <form class="form-horizontal">
+                <div class="form-group">
+                <country-store display='summaryBlock' usrCtry={{usrCtry}} usrStore={{usrStore}}> </country-store>
+                <div class="col-lg-2 col-md-3 col-sm-6">
+                    <div class="input-group date margin-bottom-10 datepick" id="datetimepicker1">
+                      <p-calendar  dateFormat="dd/mm/yy"  [showIcon]="true" placeholder="Form"></p-calendar> </div>
+                  </div>
+                  <div class="col-lg-2 col-md-3 col-sm-6">
+                    <div class="input-group date margin-bottom-10 datepick" id="datetimepicker2">
+                          <p-calendar  dateFormat="dd/mm/yy"  [showIcon]="true"  placeholder="To"></p-calendar></div>
+                  </div>
+                  <div class="col-lg-2 col-md-12 col-sm-12 margin-bottom-10 text-center"> 
+                    <button pButton type="button" class="ui-button-info" icon="fa-search"  label="Submit"></button>
+                </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="ui-widget-header" style="padding:4px 10px;border-bottom: 0 none">
+    <i class="fa fa-search" style="margin:4px 4px 0 0"></i>
+    <input #gb type="text" pInputText size="50" placeholder="Global Filter">
+     <button type="button" pButton icon="fa-file-o" iconPos="left" label="Export" (click)="dt.exportCSV()" style="float:right"></button>
+</div> 
+<p-dataTable [value]="kpiSalesData" #dt  selectionMode="single"  dataKey="uniqueId" [rows]="25" [paginator]="true" [globalFilter]="gb"  [pageLinks]="10" resizableColumns="true" [rowsPerPageOptions]="[10,25,50,100]">
+    <p-column field="date" header="Date" [sortable]="true"></p-column>
+    <p-column field="store" header="Store" [sortable]="true"></p-column>
+    <p-column field="walkins" header="Walk-Ins" [sortable]="true"></p-column>
+    <p-column field="noofbills" header="No. Of Bills" [sortable]="true"></p-column>
+    <p-column field="conversion" header="Conversion %" [sortable]="true"></p-column>
+    <p-column field="noofpcsold" header="No. Of PCs Sold " [sortable]="true"></p-column>
+    <p-column field="currency" header="Currency" [sortable]="true"></p-column>
+    <p-column field="totalbills" header="Total Bills' Value" [sortable]="true"></p-column>
+    <p-column field="avgbillvalue" header="Average Bill Value" [sortable]="true"></p-column>
+     <p-column field="sspd" header="SSPD" [sortable]="true"></p-column>
+    <p-column field="unitspertransaction" header="Units per Transaction" [sortable]="true"></p-column>
+</p-dataTable>
+          
+        
+        </div>
+
+ 
+   

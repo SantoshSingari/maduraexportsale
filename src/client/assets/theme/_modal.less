@@ -1,0 +1,487 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 8, 2016, 12:15:19 PM
+    Author     : Shukla
+*/
+
+#modalInfo{
+    padding-right: 0 !important;
+}
+.modal-dialog{
+    color        : #fff;  
+    margin       : 110px auto 0;
+    max-width    : 550px; 
+    background   : rgba(42,75,108,1) url("../images/main-bg.jpg") no-repeat scroll 0 0 / cover ;
+    border-radius: 6px;
+    .modal-content{
+        border-radius   : 0;
+        background-color: transparent;
+        .modal-header{
+            padding      : 0;
+            border-bottom: none;
+            button{
+                &.close{
+                    top           : 5px;
+                    right         : 5px;
+                    width         : 22px;
+                    color         : #fff;
+                    cursor        : pointer;   
+                    height        : 22px;
+                    z-index       : 9;
+                    opacity       : 1;
+                    position      : absolute;
+                    line-height   : 0; 
+                    border-radius : 50%;
+                    vertical-align: middle;
+                    span{
+                        font-size  : 20px;    
+                    }
+                }
+            }
+        }
+    }
+    .modal-body{
+        padding: 50px 50px 40px 50px;
+        .modal-info-wrapper{
+            padding   : 0;
+            list-style: none;
+            li{
+                float     : left;
+                width     : 50%;
+                padding   : 0 0 40px 0;
+                text-align: center;
+                img{
+                    width        : 75px;
+                    height       : 75px;
+                    margin       : 0 auto 25px;
+                    display      : block;
+                    border-radius: 50%;
+                }
+                &:nth-child(1){
+                    border-right       : 1px solid rgba(255,255,255,.2);
+                    border-bottom      : 1px solid rgba(255,255,255,.2);
+                    span{
+                        background-position: 7px 5px;  
+                    }
+                }
+                &:nth-child(2){
+                    border-bottom      : 1px solid rgba(255,255,255,.2);
+                    span{
+                        background-position: -181px -122px;
+                    }
+                }
+                &:nth-child(3){
+                    border-right       : 1px solid rgba(255,255,255,.2);
+                    span{
+                        background-position: 7px -208px;
+                    }
+                }
+                &:nth-child(4){
+                    span{
+                        background-position: -91px -122px;  
+                    }
+                }
+                &:nth-child(3),
+                    &:nth-child(4){
+                    padding: 40px 0 0 0;
+                }
+                p{
+                    color      : #fff;
+                    margin     : 0; 
+                    font-size  : 16px;
+                    font-family: roboto-regular,sans-serif;  
+                    &.add-text{
+                        cursor: pointer;
+                    }
+                }
+                div{
+                    margin: 15px 0 0;
+                    p{
+                        font-size: 14px;
+                        padding: 0 0 0 5px;
+                        strong{
+                            font-weight: normal;
+                            margin: 0 2px 0 0;
+                        }
+                    }
+                }
+                span{
+                    width              : 75px;
+                    height             : 75px;
+                    margin             : 0 auto 25px auto; 
+                    display            : block;
+                    background         : rgba(0, 0, 0, 0) url("../images/weather.png") no-repeat scroll;
+                    background-position: 15px -285px;
+                }
+                &.car-item{
+                    img{
+                        width                : 140px;
+                        height               : auto;
+                        margin               : 0 auto;
+                        border-radius        : 0;
+                        -moz-border-radius   : 0;
+                        -webkit-border-radius: 0;
+                        &.plus-white{
+                            width: 20px;
+                            display: inline-block;
+                            margin: 0 4px 0 0;
+                        }
+                    }
+                }
+                &.device-item{
+                    img{
+                        width: 50px;
+                        height: auto;
+                        margin: 0 auto 25px;
+                        border-radius        : 0;
+                        -moz-border-radius   : 0;
+                        -webkit-border-radius: 0;
+                        &.plus-white{
+                            width: 20px;
+                            display: inline-block;
+                            margin: 0 4px 0 0;
+                        }
+                    }
+                    &:nth-child(2){
+
+                    }
+                    &:nth-child(4){
+                        img{
+                            margin: -24px auto 10px
+                        }
+                    }
+                }
+                &.multimedia-item{
+                    img{
+                        width: 50px;
+                        height: auto;
+                        margin: 0 auto 25px;
+                        border-radius        : 0;
+                        -moz-border-radius   : 0;
+                        -webkit-border-radius: 0;
+                        &.plus-white{
+                            width: 20px;
+                            display: inline-block;
+                            margin: 0 4px 0 0;
+                        }
+                    }
+                    &:nth-child(2){
+
+                    }
+                    &:nth-child(2){
+                        img{
+                            width: 40px;
+                        }
+                    }
+                }
+            }
+        }
+        .video-conference-wrapper{
+            padding   : 0;
+            list-style: none;  
+            li{
+                float     : left;
+                width     : 50%;
+                padding   : 0 10px 10px;
+                text-align: center;
+                min-height: 180px;
+                img{
+                    width        : 100%;
+                    margin       : 0 auto 10px;
+                    display      : block;
+                    border-radius: 0;
+                }
+                &:nth-child(1){
+                    border-right       : 1px solid rgba(255,255,255,.2);
+                    border-bottom      : 1px solid rgba(255,255,255,.2);
+                    span{
+                        background-position: 7px 5px;  
+                    }
+                }
+                &:nth-child(2){
+                    border-bottom      : 1px solid rgba(255,255,255,.2);
+                    span{
+                        background-position: -181px -122px;
+                    }
+                }
+                &:nth-child(3){
+                    border-right       : 1px solid rgba(255,255,255,.2);
+                    span{
+                        background-position: 7px -208px;
+                    }
+                }
+                &:nth-child(4){
+                    span{
+                        background-position: -91px -122px;  
+                    }
+                }
+                &:nth-child(3),
+                    &:nth-child(4){
+                    padding: 10px 10px 0;
+                }
+                p{
+                    color      : #fff;
+                    margin     : 0; 
+                    font-size  : 16px;
+                    font-family: roboto-regular,sans-serif;  
+                }
+                a{
+                    text-decoration: none;
+                }
+                span{
+                    width              : 75px;
+                    height             : 75px;
+                    margin             : 26px auto; 
+                    display            : block;
+                    background         : rgba(0, 0, 0, 0) url("../images/weather.png") no-repeat scroll;
+                    background-position: 15px -285px;
+                }
+                &.bulb{
+                    img{
+                        width: 70px;
+                        &.plus-white{
+                            width: 20px;
+                            display: inline-block;
+                            margin: 0 10px 0;
+                        }
+                    }
+                    .add-text{
+                        margin: 35px 0 0;
+                    }
+                    .switch.yellow input + .slider{
+                        background: #fff;
+                        margin: 0;
+                        width: 100%;
+                        height: auto;
+                        color: #333;
+                        box-shadow        : 0 0 1px #2196F3;
+                        -moz-box-shadow   : 0 0 1px #2196F3;
+                        -webkit-box-shadow: 0 0 1px #2196F3;
+                        &:before{
+                            background: #ffcc00 !important;
+                        }
+                        span{
+                            background: transparent;
+                            margin: 0;
+                            width: auto;
+                            height: auto;
+                        }
+                    }
+                    .switch.yellow input:checked+.slider{
+                        margin: 0;
+                        background: #ffcc00 !important;
+                        width: 100%;
+                        color: #fff;  
+                        height: auto;
+                        box-shadow        : 0 0 1px #2196F3;
+                        -moz-box-shadow   : 0 0 1px #2196F3;
+                        -webkit-box-shadow: 0 0 1px #2196F3;
+                        &:before{
+                            background: #fff !important;
+                        }
+                        span{
+                            background: transparent;
+                            margin: 0;
+                            width: auto;
+                            height: auto;
+                        }
+                    }
+                }
+            }  
+        }
+        .modal-logo{
+            display   : block;
+            margin-top: 40px;
+            img{
+                margin : 0 auto;
+                display: block;
+            }
+        }
+        .shop-now-wrapper {
+            padding   : 0;
+            list-style: none;
+            &:before, &:after{
+                clear  : both; 
+                display: table;
+                content: "";
+            }
+            li{
+                width        : 50%;
+                float        : left;
+                padding      : 20px 0;
+                min-height   : 120px;
+                text-align   : center;
+                border-right : 1px solid rgba(255,255,255,0.3);
+                border-bottom: 1px solid rgba(255,255,255,0.3);
+
+                &:nth-child(2){
+                    border-right: none;    
+                }
+                &:nth-child(3){
+                    border-bottom: none;    
+                }
+                &:nth-child(4){
+                    border-right : none;    
+                    border-bottom: none;    
+                }
+                a{
+                    color          : #fff;
+                    margin         : 0; 
+                    font-size      : 20px;
+                    font-family    : roboto-regular,sans-serif;
+                    text-decoration: none;
+                    img{
+                        width : 180px;
+                        height: 160px;
+                    }
+                    small{
+                        color      : #fff;
+                        margin     : 0; 
+                        display    : block; 
+                        font-size  : 14px;
+                        font-family: roboto-light,sans-serif;
+                    }
+                }
+            }
+        }
+    }
+}
+#modalInfo2{
+    ul{
+        li{
+            img{
+                width        : 75px;
+                height       : 75px;
+                margin       : 0 auto 25px auto; 
+                display      : block;
+                border-radius: 50%;
+            }
+            span{
+                background-position: 0 -121px;
+            }
+        }
+    }
+}
+#modalDadInfo{
+    .modal-dialog{
+        .modal-body{
+            .modal-info-wrapper{
+                li{
+                    img{
+
+                    }
+                }
+            }
+        }
+    }
+}
+.schedule-event-wrapper{
+    .modal-body{
+        padding: 25px;
+        .form-wrapper{
+            .control-label{
+                margin: 0 0 15px;
+            }
+            .input-group{  
+                margin: 0 0 15px;
+                .form-control{
+                    height: 40px;
+                    padding: 9px 10px;
+                }
+            }
+            .btn{
+                margin: 0 auto;
+                display: block;
+            }
+        }
+    }
+}
+
+.angularjs-datetime-picker {
+    z-index: 9999;
+}
+
+@media (min-width: 1200px) and (max-width: 1499px){
+    .modal-dialog{
+        margin: 40px auto 0;
+    }
+}
+@media (min-width: 200px) and (max-width: 1199px){
+    .modal-dialog{
+        margin: 30px auto 0;
+    }   
+}
+@media (min-width: 480px) and (max-width: 767px){
+    .modal-dialog{
+        width: 90%;
+        .modal-body{
+            padding: 20px 20px 15px;
+            .modal-logo{
+                margin-top: 20px;
+            }
+        }
+    }   
+}
+@media (min-width: 200px) and (max-width: 550px){
+    .modal-dialog {
+        .modal-body {
+            .video-conference-wrapper {
+                li{
+                    min-height: initial;
+                    &:nth-child(4) {
+                        span{
+                            margin: 20px auto;
+                        }
+                    }
+                    img{
+                        min-height: 160px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 200px) and (max-width: 480px){
+    .modal-dialog{
+        width: 95%;
+        .modal-body{
+            padding: 20px 20px 15px;
+            .shop-now-wrapper{
+                li{
+                    a{
+                        img{
+                            width : 120px;
+                            height: 110px;
+                        }
+                    }
+                }
+            }
+            .modal-logo{
+                margin-top: 20px;
+                img{
+                    max-width: 150px;
+                }
+            }
+            .modal-info-wrapper {
+                li {
+                    &:nth-child(1), &:nth-child(2){
+                        padding: 0 0 20px;
+                    }  
+                    &:nth-child(3), &:nth-child(4){
+                        padding: 20px 0 0;
+                    }
+                    span{
+                        margin: 0 auto 20px;
+                    }
+                    p{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }   
+}

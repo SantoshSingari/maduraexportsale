@@ -1,0 +1,259 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 29 Jul, 2016, 1:42:02 PM
+    Author     : Ahex
+*/
+
+.custom-navbar{
+    .navbar-brand{
+        padding    : 0;
+        margin-top : 50px;
+        margin-left: 20px !important;
+        .user-icon{
+            width        : 105px;
+            height       : 105px;
+            margin       : 5px auto;
+            border-radius: 50%;
+        }
+    }
+    .log-out{
+        top            : 25px;
+        right          : 10px;
+        color          : #fff;
+        position       : absolute;
+        font-size      : 15px;
+        font-weight    : bold; 
+        text-decoration: none;
+    }
+    /*    .btn-custom{
+            color       : #fff; 
+            background  : #33CCFF;
+            border-color: #33CCFF; 
+        }*/
+    .shop-now{
+        top            : 25px;
+        right          : 90px;
+        color          : #fff;
+        position       : absolute;
+        font-size      : 15px;
+        font-weight    : bold; 
+        text-decoration: none;
+    }
+    .navbar-nav{  
+        margin: 45px 0 0 30px;
+        > li{
+            float  : none;
+            display: block;
+            > a{  
+                color      : #fff;
+                padding    : 0;
+                font-size  : 25px;       
+                line-height: 28px;
+                font-family: roboto-light, sans-serif;
+                &:hover, &:active, &:focus, &.active:focus{
+                    background: transparent;
+                }
+            }
+        }
+    }  
+    h1{  
+        top        : 0; 
+        left       : 50%; 
+        color      : #fff;     
+        margin     : 30px auto 0;
+        position   : absolute;
+        font-size  : 32px;
+        transform  : translate(-50%); 
+        text-align : center;
+        font-family: roboto-regular, sans-serif;
+        small{
+            color      : #fff;    
+            display    : block; 
+            font-size  : 18px;
+            line-height: 30px;
+        }
+    }
+}
+
+@media (min-width: 1500px) and (max-width: 1750px){
+    .custom-navbar {
+        .navbar-brand {
+            .user-icon{
+                width : 85px;
+                height: 85px;
+            }
+        }
+    }
+}
+@media (min-width: 1200px) and (max-width: 1499px){
+
+    .custom-navbar {
+        .navbar-brand {
+            .user-icon{
+                width : 75px;
+                height: 75px;
+            }
+        }
+        h1 {
+            font-size: 25px;
+            small{
+                font-size: 15px;
+            }
+        }
+    }
+}
+@media (min-width: 991px) and (max-width: 1199px){
+    .custom-navbar {
+        h1 {
+            left       : 33.32%;
+            margin     : 35px auto 0; 
+            font-size  : 25px;
+            transform  : translate(-33.32%);
+            margin-left: 32px !important;
+            small{
+                font-size: 15px;
+            }
+        }
+        &.navbar{
+            h1{
+                left: 44%;
+                margin-left: 25px !important;
+            }
+        }
+        .navbar-brand{
+            img{
+                max-width: 150px;
+            }
+            .user-icon{
+                top     : 80px;
+                left    : 80px;
+                width   : 60px;
+                height  : 60px;
+                position: absolute;
+            }
+        }
+        .navbar-nav{
+            margin: 35px 0 0 15px;
+            li{
+                a{
+                    font-size: 20px;
+                    line-height: 28px;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 767px) and (max-width: 990px){
+    .custom-navbar {
+        .navbar-brand {
+            margin-top : 28px;
+            margin-left: 50px !important;
+            .user-icon{
+                top     : 70px;
+                left    : 145px;
+                width   : 60px;
+                height  : 60px;
+                position: absolute;
+            }
+        }
+        h1{
+            top          : auto; 
+            left         : auto;
+            position     : relative; 
+            transform    : none;
+            font-size    : 22px;
+            margin-top   : 15px;
+            padding-left : 70px;
+            margin-bottom: 5px;
+            small{
+                font-size : 15px;
+            }
+        }
+    }
+}
+@media (min-width: 480px) and (max-width: 766px){
+    .custom-navbar {
+        .navbar-brand {
+            margin-top : 28px;
+            margin-left: 50px !important;
+            .user-icon{
+                top     : 70px;
+                left    : 130px;
+                width   : 60px;
+                height  : 60px;
+                position: absolute;
+            }
+        }
+        h1{
+            top          : auto; 
+            left         : auto;
+            position     : relative; 
+            transform    : none;
+            font-size    : 20px;
+            margin-top   : 15px;
+            padding-left : 50px;
+            margin-bottom: 5px;
+            small{
+                font-size : 13px;
+            }
+        }
+    }
+}
+@media (max-width: 990px) {
+    .custom-navbar {
+        margin: 0;
+        .navbar-brand {
+            margin-top : 28px;
+            margin-left: 50px !important;
+        }
+        .navbar-nav {
+            margin: 25px 0 0 23px;
+            > li{
+                > a {
+                    font-size  : 20px;
+                    line-height: 25px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 767px) {
+    .navbar-collapse, .navbar-header{
+        display: inline-block;
+    }
+    .navbar-collapse{
+        vertical-align: top;
+    }
+}
+@media (min-width: 200px) and (max-width: 480px){
+    .custom-navbar {
+        .navbar-brand {
+            margin-top : 28px;
+            margin-left: 50px !important;  
+            .user-icon{  
+                top     : 70px;
+                left    : 130px;
+                width   : 60px;
+                height  : 60px;
+                position: absolute;
+            }
+        }
+        h1{
+            top          : auto; 
+            left         : auto;
+            position     : relative; 
+            transform    : none;
+            font-size    : 20px;
+            margin-top   : 15px;
+            padding-left : 55px;
+            margin-bottom: 5px;
+            small{
+                font-size : 13px;
+            }
+        }
+    }
+}

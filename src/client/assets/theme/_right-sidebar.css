@@ -1,0 +1,403 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 29 Jul, 2016, 5:37:47 PM
+    Author     : Ahex
+*/
+.right-sidebar {
+  padding: 20px 20px 0 10px;
+  border-radius: 5px;
+  background-color: #8395c4;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+.right-sidebar h2 {
+  color: #fff;
+  margin: 0;
+  padding: 0 0 0 10px;
+  display: inline-block;
+  font-size: 22px;
+  font-family: roboto-regular, sans-serif;
+  text-transform: capitalize;
+}
+.right-sidebar .add-link {
+  color: #293967;
+  float: right;
+  display: inline-block;
+  font-size: 20px;
+  font-family: roboto-light, sans-serif;
+}
+.right-sidebar .add-link:hover,
+.right-sidebar .add-link:focus {
+  color: #293967;
+  text-decoration: none;
+}
+.right-sidebar .content-list {
+  margin: 25px 0;
+}
+.right-sidebar {
+  overflow-y: auto;
+  max-height: 400px;
+}
+.right-sidebar .content-list li {
+  width: 33.33%;
+  float: left;
+  display: inline-block;
+  position: relative;
+  padding-left: 30px;
+}
+.right-sidebar .content-list li a:before {
+  left: 0;
+  height: 30px;
+  content: "";
+  display: inline-block;
+  min-width: 26px;
+  position: absolute;
+  background-image: url("../images/weather.png");
+  background-position: -39px -920px;
+}
+.right-sidebar .content-list li:first-child a:before {
+  left: 0;
+  height: 27px;
+  content: "";
+  display: inline-block;
+  min-width: 25px;
+  position: absolute;
+  background-image: url("../images/weather.png");
+  background-position: 4px -922px;
+}
+.right-sidebar .content-list li:last-child a:before {
+  left: 0;
+  height: 27px;
+  content: "";
+  display: inline-block;
+  min-width: 20px;
+  position: absolute;
+  background-image: url("../images/weather.png");
+  background-position: -77px -922px;
+}
+.right-sidebar .content-list li a img {
+  display: inline-block;
+  margin-right: 5px;
+  min-height: 30px;
+  vertical-align: top;
+}
+.right-sidebar .content-list li a span {
+  color: #fff;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: left;
+  font-family: roboto-light, sans-serif;
+}
+.right-sidebar .content-list li a span small {
+  color: #293967;
+  display: block;
+  font-size: 12px;
+  font-family: roboto-light, sans-serif;
+}
+.timeline {
+  margin: 0;
+  padding: 0 0 37px;
+  position: relative;
+  list-style: none;
+}
+.timeline:before {
+  top: 0;
+  left: 20%;
+  width: 3px;
+  bottom: 0;
+  content: " ";
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.timeline > li {
+  position: relative;
+  min-height: 60px;
+  margin-bottom: 20px;
+}
+.timeline > li:last-child {
+  margin-bottom: 0;
+}
+.timeline > li:before,
+.timeline > li:after {
+  clear: both;
+  display: table;
+  content: "";
+}
+.timeline > li > .timeline-panel {
+  width: 65%;
+  float: left;
+  border: 1px solid #56658e;
+  padding: 10px;
+  position: relative;
+  min-height: 55px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+  border-radius: 2px;
+  background-color: #56658e;
+  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+}
+.timeline > li > .timeline-panel:before {
+  position: absolute;
+  top: 3px;
+  right: -15px;
+  content: " ";
+  display: inline-block;
+  border-top: 11px solid transparent;
+  border-left: 11px solid #56658e;
+  border-right: 0 solid #56658e;
+  border-bottom: 15px solid transparent;
+}
+.timeline > li > .timeline-panel:after {
+  top: 4px;
+  right: -14px;
+  content: " ";
+  display: inline-block;
+  position: absolute;
+  border-top: 10px solid transparent;
+  border-left: 10px solid #56658e;
+  border-right: 0 solid #56658e;
+  border-bottom: 14px solid transparent;
+}
+.timeline > li > .timeline-badge {
+  top: 0;
+  left: 16%;
+  width: 28px;
+  height: 28px;
+  z-index: 100;
+  position: absolute;
+  text-align: center;
+  line-height: 28px;
+  margin-left: 0;
+  background-color: #ffffff;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+.timeline > li > .timeline-badge:before {
+  top: 0;
+  left: 0;
+  height: 24px;
+  content: "";
+  display: inline-block;
+  min-width: 22px;
+  position: absolute;
+  background-image: url("../images/weather.png");
+  background-position: -111px -918px;
+}
+.timeline > li > .timeline-left-panel {
+  width: 12%;
+  display: inline-block;
+  text-align: right;
+}
+.timeline > li > .timeline-left-panel p {
+  color: #293967;
+  margin: 0;
+  font-size: 14px;
+  font-family: "roboto-light", sans-serif;
+}
+.timeline > li > .timeline-left-panel p:first-of-type {
+  position: absolute;
+  top: -20px;
+  left: -8px;
+}
+.timeline > li > .timeline-left-panel p span {
+  display: block;
+  font-size: 12px;
+}
+.timeline > li > .timeline-panel {
+  float: right;
+}
+.timeline > li > .timeline-panel:before {
+  left: -15px;
+  right: auto;
+  border-left-width: 0;
+  border-right-width: 15px;
+}
+.timeline > li > .timeline-panel:after {
+  left: -14px;
+  right: auto;
+  border-left-width: 0;
+  border-right-width: 14px;
+}
+.timeline .timeline-panel .timeline-title {
+  color: #fff;
+  margin: 0 0 5px;
+  opacity: 0.7;
+  font-size: 12px;
+  font-family: "roboto-light", sans-serif;
+}
+.timeline .timeline-panel .timeline-body p {
+  color: #fff;
+  margin: 0;
+  font-size: 16px;
+  word-wrap: break-word;
+  font-family: "roboto-light", sans-serif;
+}
+@media (min-width: 1475px) and (max-width: 1750px) {
+  .right-sidebar h2 {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1499px) {
+  .right-sidebar {
+    padding: 10px 10px 0 10px;
+  }
+  .right-sidebar h2 {
+    font-size: 17px;
+  }
+  .right-sidebar .add-link {
+    font-size: 15px;
+    font-weight: bold;
+  }
+  .timeline .timeline-panel .timeline-body p {
+    font-size: 13px;
+    line-height: 16px;
+  }
+  .timeline > li > .timeline-panel {
+    padding: 5px 10px;
+  }
+  .timeline > li > .timeline-left-panel {
+    text-align: center;
+  }
+  .timeline > li > .timeline-left-panel p {
+    font-size: 12px;
+  }
+}
+@media (min-width: 991px) and (max-width: 1199px) {
+  .right-sidebar h2 {
+    font-size: 20px;
+  }
+  .right-sidebar .add-link {
+    font-size: 16px;
+  }
+  .right-sidebar .content-list {
+    margin: 38px 0;
+  }
+  .timeline > li > .timeline-left-panel {
+    width: 16%;
+  }
+  .timeline > li > .timeline-badge {
+    left: 21.2%;
+  }
+  .timeline > li > .timeline-panel {
+    width: 59%;
+  }
+  .timeline::before {
+    left: 26%;
+  }
+}
+@media (min-width: 991px) and (max-width: 1199px) {
+  .right-sidebar {
+    padding: 10px 15px 0 10px;
+  }
+  .right-sidebar h2 {
+    font-size: 16px;
+  }
+  .right-sidebar.schedular-wrapper {
+    width: 18%;
+    padding: 10px 5px 0 5px;
+  }
+  .right-sidebar.schedular-wrapper .head .add-link {
+    margin-right: 5px;
+  }
+  .right-sidebar.schedular-wrapper .content-list li {
+    width: 28.33%;
+    float: left;
+    display: inline-block;
+    position: relative;
+    padding-left: 25px;
+    margin-right: 8px;
+  }
+  .right-sidebar.schedular-wrapper .content-list li a:before {
+    left: 0;
+    height: 30px;
+    content: "";
+    display: inline-block;
+    min-width: 25px;
+    position: absolute;
+    background-image: url("../images/weather.png");
+    background-position: -39px -920px;
+  }
+  .right-sidebar.schedular-wrapper .content-list li a span small {
+    font-size: 10px;
+  }
+  .right-sidebar.schedular-wrapper .content-list li:first-child a:before {
+    left: 0;
+    height: 27px;
+    content: "";
+    display: inline-block;
+    min-width: 21px;
+    position: absolute;
+    background-image: url("../images/weather.png");
+    background-position: 1px -922px;
+  }
+  .right-sidebar.schedular-wrapper .content-list li:nth-child(2) a {
+    padding-left: 5px;
+  }
+  .right-sidebar.schedular-wrapper .content-list li:nth-child(2) a:before {
+    left: 0;
+    height: 27px;
+    content: "";
+    display: inline-block;
+    min-width: 25px;
+    position: absolute;
+    background-image: url("../images/weather.png");
+    background-position: -39px -920px;
+  }
+  .right-sidebar.schedular-wrapper .content-list li:last-child a:before {
+    left: 0;
+    height: 27px;
+    content: "";
+    display: inline-block;
+    min-width: 20px;
+    position: absolute;
+    background-image: url("../images/weather.png");
+    background-position: -77px -922px;
+  }
+  .right-sidebar.schedular-wrapper .timeline::before {
+    left: 35%;
+  }
+  .right-sidebar.schedular-wrapper .timeline li .timeline-badge {
+    left: 28%;
+  }
+  .right-sidebar.schedular-wrapper .timeline li .timeline-left-panel p {
+    font-size: 12px;
+  }
+  .right-sidebar.schedular-wrapper .timeline li .timeline-left-panel p:first-of-type {
+    left: 0px;
+  }
+  .right-sidebar.schedular-wrapper .timeline li .timeline-left-panel p:last-of-type {
+    margin-left: 10px;
+  }
+  .right-sidebar.schedular-wrapper .timeline li .timeline-left-panel p:last-of-type span {
+    margin-left: 7px;
+    font-size: 10px;
+  }
+  .right-sidebar.schedular-wrapper .timeline li .timeline-panel {
+    width: 50%;
+    min-height: 45px;
+  }
+  .timeline .timeline-panel .timeline-title {
+    font-size: 11px;
+  }
+  .timeline .timeline-panel .timeline-body p {
+    font-size: 13px;
+  }
+}
+@media (min-width: 767px) and (max-width: 990px) {
+  .right-sidebar {
+    width: 40%;
+    margin-top: 18%;
+  }
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .right-sidebar {
+    width: 40%;
+    margin-top: 18%;
+  }
+}

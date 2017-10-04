@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <base href="./">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>Madhura Export Sales</title>
+   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="node_modules/primeng/resources/themes/omega/theme.css" />
+    <link rel="stylesheet" type="text/css" href="node_modules/primeng/resources/primeng.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" >
+  <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="http://plugins.krajee.com/assets/ee285b9b/css/fileinput.css" rel="stylesheet">
+  <script src="http://plugins.krajee.com/assets/ee285b9b/js/fileinput.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="node_modules/primeng/resources/themes/omega/theme.css" />
+    <link rel="stylesheet" type="text/css" href="node_modules/primeng/resources/primeng.min.css" />
+    <script src="node_modules/primeng/primeng.js"></script>
+   <script src="node_modules/ng2-charts/charts/charts.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.js"></script>
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/reflect-metadata/Reflect.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <script src="node_modules/lodash/lodash.js"></script>
+    <meta name="msapplication-TileColor" content="#00464f">
+    <meta name="msapplication-TileImage" content="images/favicon/mstile-144x144.png">
+    <script>
+     document.addEventListener("DOMContentLoaded", function(event) {
+       bootstrap(AppComponent);
+        });</script>
+   </head>
+  <body>
+   <app>Loading...</app>
+ </body>
+  <script src="systemjs.config.js"></script>
+   <script>
+        System.import('app').catch(function (err) { console.error(err); });
+    </script>
+
+  <script>
+  function module() {}
+  </script>
+  <% if (BUILD_TYPE === 'dev') { %>
+  <script src="<%= APP_BASE %>app/system-config.js"></script>
+  <% } %>
+  <% if (BUILD_TYPE === 'dev') { %>
+  <script>
+  System.import('<%= BOOTSTRAP_MODULE %>')
+    .catch(function (e) {
+      console.error(e.stack || e,
+        'Not expecting this error? Report it at https://github.com/mgechev/angular-seed/issues');
+    });
+  </script>
+  <% } %>
+
+<script>
+document.addEventListener("DOMContentLoaded", function(event) {
+  bootstrap(AppComponent);
+});
+</script>
+</html>

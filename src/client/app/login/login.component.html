@@ -1,0 +1,36 @@
+﻿<p-growl [value]="msgs" sticky="sticky"></p-growl>
+<div class="container-fluid login-page" >
+   <div class="row">
+      <div class="col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-10 col-sm-offset-1 col-xs-12">
+         <div class="login-widget">
+            <p class="text-center padding-top-20"><img src="app/images/ab-madhura-fsrtl.png" alt="Aditya Birla Fashion & Retail" class="img-responsive center-block max-height-120"></p>
+            <h3>Sign In</h3>
+            <form class="padding-left-right-30 padding-top-bottom-15" (ngSubmit)="login(user)" #myForm="ngForm"  novalidate>
+               <div class="form-group">
+                  <div class="input-group">
+                     <span class="input-group-addon" id="basic-addon1"><i class="glyphicon glyphicon-user"></i></span>
+                     <input type="text" class="form-control"  [(ngModel)]="user.userName"  #userName="ngModel"
+                     name="userName" placeholder="Username" aria-describedby="basic-addon1" required>
+                  </div>
+                  <div [hidden]="userName.valid || (userName.pristine && !myForm.submitted)">
+                            <small class="text-danger">Please Enter The UserName</small>
+                       </div>
+               </div>
+               <div class="form-group">
+                  <div class="input-group">
+                     <span class="input-group-addon" id="basic-addon1"><i class="glyphicon glyphicon-lock"></i></span>
+                     <input type="password" class="form-control" [(ngModel)]="user.password" #password="ngModel" 
+                     name="pasword" id="exampleInputPassword1" placeholder="Password" required>
+                  </div>
+                   <div [hidden]="password.valid || (password.pristine && !myForm.submitted)">
+                            <small class="text-danger">Please Enter The Password</small>
+                       </div>
+               </div>
+               <button type="submit" [disabled]="!myForm.form.valid" class="btn btn-success btn-default btn-block margin-top-25">LogIn</button>
+            </form>
+         </div>
+      </div>
+   </div>
+</div>
+
+           

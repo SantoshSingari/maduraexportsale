@@ -1,0 +1,508 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 29 Jul, 2016, 3:20:41 PM
+    Author     : Ahex
+*/
+.content-top-wrapper {
+  width: 68%;
+  margin: 0 auto 55px;
+  padding: 0;
+  display: table;
+}
+.content-top-wrapper ul {
+  padding: 0 15px;
+  margin: 65px 0 0 0;
+  text-align: center;
+}
+.content-top-wrapper ul li {
+  float: left;
+  width: 16.66%;
+  display: table-cell;
+  min-height: 155px;
+  vertical-align: top;
+}
+.content-top-wrapper ul li span.sunny-cloud {
+  height: 65px;
+  margin: 5px auto 35px;
+  display: inline-block;
+  content: "";
+  min-width: 63px;
+  background-image: url("../images/weather.png");
+  background-position: 0 -948px;
+}
+.content-top-wrapper ul li span.cloud-stats {
+  height: 65px;
+  margin: 8px auto 12px;
+  display: inline-block;
+  content: "";
+  min-width: 68px;
+  background-image: url("../images/weather.png");
+  background-position: -80px -948px;
+}
+.content-top-wrapper ul li img.cloud-stats {
+  height: 60px;
+}
+.content-top-wrapper ul li:nth-child(3) {
+  width: 33.32%;
+  padding: 0;
+}
+.content-top-wrapper ul li:nth-child(3) img {
+  min-width: 100%;
+  height: 168px;
+  border-radius: 6px;
+}
+.content-top-wrapper ul li:nth-child(4) {
+  width: 33.32%;
+}
+.content-top-wrapper ul li p {
+  color: #fff;
+  margin: 0;
+  font-size: 22px;
+  text-align: left;
+  font-family: roboto-regular, sans-serif;
+}
+.content-top-wrapper ul li span {
+  color: #fff;
+  font-size: 18px;
+  font-family: roboto-light, sans-serif;
+}
+.content-top-wrapper ul li span.blue {
+  color: #aabff2;
+  font-size: 20px;
+  margin-right: 8px;
+}
+.content-top-wrapper ul li:first-child {
+  padding: 22px 15px 5px;
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+.content-top-wrapper ul li:first-child img {
+  height: 70px;
+  margin: 5px auto 33px;
+}
+.content-top-wrapper ul li:first-child p span {
+  float: right;
+  color: #fff;
+  font-size: 22px;
+  font-family: roboto-regular, sans-serif;
+}
+.content-top-wrapper ul li img {
+  display: block;
+  margin: 0 auto;
+}
+.content-top-wrapper ul li.mild-showers {
+  padding: 10px 0 0 0;
+}
+.content-top-wrapper ul li.mild-showers img {
+  margin: 15px auto;
+}
+.content-top-wrapper ul li.mild-showers p {
+  text-align: center;
+}
+.content-top-wrapper ul li:last-child {
+  padding: 45px 0 0 170px;
+  position: relative;
+}
+.content-top-wrapper ul li:last-child img {
+  top: 50%;
+  left: 36px;
+  position: absolute;
+  transform: translate(0px, -50%);
+}
+.content-top-wrapper ul li:last-child p {
+  margin-top: 15px;
+}
+.content-top-wrapper ul li .profile-desc {
+  text-align: left;
+}
+@media (min-width: 1501px) and (max-width: 1750px) {
+  .content-top-wrapper {
+    width: 62%;
+  }
+  .content-top-wrapper ul {
+    margin: 30px 0 0;
+  }
+  .content-top-wrapper ul li:first-child {
+    padding: 10px 15px 5px;
+  }
+  .content-top-wrapper ul li:first-child p span {
+    font-size: 18px;
+  }
+  .content-top-wrapper ul li:first-child img {
+    margin: 5px auto 25px;
+  }
+  .content-top-wrapper ul li.mild-showers {
+    padding: 0;
+  }
+  .content-top-wrapper ul li.mild-showers span {
+    font-size: 15px;
+  }
+  .content-top-wrapper ul li.mild-showers span.blue {
+    font-size: 16px;
+  }
+  .content-top-wrapper ul li.mild-showers span.cloud-stats {
+    margin: 5px auto 10px;
+  }
+  .content-top-wrapper ul li:last-child {
+    padding: 45px 0 0 115px;
+  }
+  .content-top-wrapper ul li:last-child img {
+    top: 50%;
+    left: 13px;
+    max-width: 85px;
+  }
+  .content-top-wrapper ul li:last-child p {
+    margin-top: 5px;
+  }
+  .content-top-wrapper ul li p {
+    font-size: 18px;
+    margin-top: 5px;
+  }
+  .content-top-wrapper ul li p span {
+    font-size: 18px;
+  }
+  .content-top-wrapper ul li:nth-child(3) img {
+    height: 155px;
+  }
+  .content-top-wrapper ul li span.sunny-cloud {
+    margin: 5px auto 28px;
+  }
+}
+@media (min-width: 1501px) and (max-width: 1546px) {
+  .content-top-wrapper ul li img.cloud-stats {
+    height: 45px;
+  }
+  .content-top-wrapper ul li:first-child img {
+    margin: 5px auto 30px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1500px) {
+  .content-top-wrapper {
+    width: 60%;
+    margin: 0 auto 30px;
+  }
+  .content-top-wrapper ul {
+    margin: 30px 0 0;
+  }
+  .content-top-wrapper ul li {
+    min-width: 16.66%;
+    min-height: 114px;
+  }
+  .content-top-wrapper ul li span {
+    font-size: 13px;
+  }
+  .content-top-wrapper ul li span.blue {
+    font-size: 12px;
+    margin-right: 4px;
+  }
+  .content-top-wrapper ul li span.sunny-cloud {
+    width: 40px;
+    height: 40px;
+    margin: 5px auto 15px;
+    min-width: 40px;
+    background-image: url("../images/weather-small.png");
+    background-position: 4px -1009px;
+  }
+  .content-top-wrapper ul li span.cloud-stats {
+    width: 40px;
+    height: 40px;
+    margin: 5px auto 15px;
+    min-width: 40px;
+    background-image: url("../images/weather-small.png");
+    background-position: -51px -1006px;
+  }
+  .content-top-wrapper ul li img.cloud-stats {
+    height: 65px;
+    margin: 0 auto !important;
+  }
+  .content-top-wrapper ul li p {
+    font-size: 14px;
+  }
+  .content-top-wrapper ul li p small {
+    font-size: 14px;
+  }
+  .content-top-wrapper ul li:first-child {
+    padding: 10px 5px 5px;
+  }
+  .content-top-wrapper ul li:first-child p span {
+    font-size: 14px;
+  }
+  .content-top-wrapper ul li:first-child img {
+    margin: 5px auto 1px;
+  }
+  .content-top-wrapper ul li.mild-showers {
+    padding: 0;
+  }
+  .content-top-wrapper ul li:nth-child(3) img {
+    height: 114px;
+    min-width: 95%;
+  }
+  .content-top-wrapper ul li:last-child {
+    padding: 28px 0 0 95px;
+  }
+  .content-top-wrapper ul li:last-child img {
+    left: 10px;
+    max-width: 75px;
+  }
+  .content-top-wrapper ul li:last-child p {
+    margin-top: 10px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1301px) {
+  .content-top-wrapper ul li img.cloud-stats {
+    height: 45px;
+    margin: 0 auto !important;
+  }
+}
+@media (min-width: 991px) and (max-width: 1199px) {
+  .content-top-wrapper {
+    width: 70%;
+    margin: 0 auto 30px;
+    padding: 0 15px;
+    display: table;
+  }
+  .content-top-wrapper ul {
+    margin: 30px 0 0;
+    padding: 0;
+  }
+  .content-top-wrapper ul li {
+    min-width: 16.66%;
+    min-height: 110px;
+  }
+  .content-top-wrapper ul li span {
+    font-size: 13px;
+  }
+  .content-top-wrapper ul li span.blue {
+    font-size: 12px;
+    margin-right: 4px;
+  }
+  .content-top-wrapper ul li span.sunny-cloud {
+    width: 40px;
+    height: 40px;
+    margin: 5px auto 20px;
+    min-width: 40px;
+    background-image: url("../images/weather-small.png");
+    background-position: 4px -1009px;
+  }
+  .content-top-wrapper ul li span.cloud-stats {
+    width: 40px;
+    height: 40px;
+    margin: 5px auto 15px;
+    min-width: 40px;
+    background-image: url("../images/weather-small.png");
+    background-position: -51px -1006px;
+  }
+  .content-top-wrapper ul li.mild-showers img {
+    margin: 2px auto;
+  }
+  .content-top-wrapper ul li p {
+    font-size: 14px;
+  }
+  .content-top-wrapper ul li p small {
+    font-size: 14px;
+  }
+  .content-top-wrapper ul li:first-child {
+    padding: 15px 10px 0;
+  }
+  .content-top-wrapper ul li:first-child p span {
+    font-size: 14px;
+  }
+  .content-top-wrapper ul li:first-child img {
+    height: 64px;
+    margin: 5px auto 1px;
+  }
+  .content-top-wrapper ul li:nth-child(3) img {
+    height: 110px;
+  }
+  .content-top-wrapper ul li:last-child {
+    padding: 28px 0 0 95px;
+  }
+  .content-top-wrapper ul li:last-child img {
+    left: 10px;
+    max-width: 75px;
+  }
+  .content-top-wrapper ul li:last-child p {
+    margin-top: 10px;
+  }
+  .content-top-wrapper ul li.mild-showers {
+    padding: 0;
+  }
+}
+@media (min-width: 991px) and (max-width: 1119px) {
+  .content-top-wrapper ul li.mild-showers img {
+    height: 40px;
+    margin: 2px auto;
+  }
+}
+@media (min-width: 767px) and (max-width: 990px) {
+  .content-top-wrapper {
+    width: 100%;
+    margin: 0 auto 30px;
+    padding: 0 15px;
+    display: table;
+  }
+  .content-top-wrapper ul {
+    margin: 0;
+    padding: 0;
+  }
+  .content-top-wrapper ul li {
+    width: 19.5%;
+    min-height: auto;
+  }
+  .content-top-wrapper ul li:first-child {
+    padding: 0 5px;
+  }
+  .content-top-wrapper ul li:first-child p {
+    font-size: 16px;
+  }
+  .content-top-wrapper ul li:first-child p span {
+    font-size: 16px;
+  }
+  .content-top-wrapper ul li:first-child img {
+    margin: 5px auto 25px;
+  }
+  .content-top-wrapper ul li.mild-showers {
+    padding: 0;
+  }
+  .content-top-wrapper ul li.mild-showers span {
+    font-size: 12px;
+  }
+  .content-top-wrapper ul li.mild-showers span.blue {
+    font-size: 14px;
+    margin-right: 2px;
+  }
+  .content-top-wrapper ul li.mild-showers img {
+    margin: 9px auto;
+  }
+  .content-top-wrapper ul li:last-child {
+    padding: 45px 0 0 90px;
+    position: relative;
+  }
+  .content-top-wrapper ul li:last-child span {
+    font-size: 14px;
+  }
+  .content-top-wrapper ul li:last-child span.blue {
+    font-size: 13px;
+    margin-right: 2px;
+  }
+  .content-top-wrapper ul li:last-child img {
+    left: 10px;
+    max-width: 70px;
+  }
+  .content-top-wrapper ul li:last-child p {
+    margin-top: 5px;
+  }
+  .content-top-wrapper ul li:nth-child(3),
+  .content-top-wrapper ul li:nth-child(4) {
+    width: 30.5%;
+  }
+  .content-top-wrapper ul li:nth-child(3) img {
+    height: 122px;
+  }
+  .content-top-wrapper ul li:last-child {
+    padding: 40px 0 0 90px;
+    min-height: 122px;
+  }
+  .content-top-wrapper ul li p {
+    font-size: 16px;
+  }
+  .content-top-wrapper ul li .bridge-img {
+    height: 122px;
+  }
+  .content-top-wrapper ul li span.sunny-cloud {
+    margin: 5px auto 25px;
+  }
+  .content-top-wrapper ul li span.cloud-stats {
+    margin: 8px auto 0;
+  }
+  .content-top-wrapper ul li.mild-showers {
+    padding: 0 0;
+  }
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .content-top-wrapper {
+    width: 100%;
+    margin: 0 auto 30px;
+    padding: 0 15px;
+    display: table;
+  }
+  .content-top-wrapper h1 {
+    font-size: 18px;
+    padding-left: 45px;
+  }
+  .content-top-wrapper ul {
+    margin: 0;
+    padding: 0;
+  }
+  .content-top-wrapper ul li {
+    min-width: 19.5%;
+    min-height: auto;
+  }
+  .content-top-wrapper ul li:first-child {
+    padding: 0 5px;
+  }
+  .content-top-wrapper ul li:first-child p {
+    font-size: 16px;
+  }
+  .content-top-wrapper ul li:first-child p span {
+    font-size: 16px;
+  }
+  .content-top-wrapper ul li:first-child img {
+    margin: 5px auto 25px;
+  }
+  .content-top-wrapper ul li:nth-child(3) {
+    width: 30%;
+  }
+  .content-top-wrapper ul li:nth-child(3) img {
+    height: 120px;
+  }
+  .content-top-wrapper ul li.mild-showers {
+    padding: 0 5px;
+  }
+  .content-top-wrapper ul li.mild-showers span {
+    font-size: 15px;
+  }
+  .content-top-wrapper ul li.mild-showers span.blue {
+    font-size: 14px;
+    margin-right: 2px;
+  }
+  .content-top-wrapper ul li:last-child {
+    width: 31%;
+    padding: 38px 0 0 80px;
+    height: 122px;
+    position: relative;
+  }
+  .content-top-wrapper ul li:last-child span {
+    font-size: 14px;
+  }
+  .content-top-wrapper ul li:last-child span.blue {
+    font-size: 15px;
+    margin-right: 2px;
+  }
+  .content-top-wrapper ul li:last-child img {
+    left: 10px;
+    max-width: 65px;
+  }
+  .content-top-wrapper ul li:last-child p {
+    margin-top: 5px;
+  }
+  .content-top-wrapper ul li p {
+    font-size: 16px;
+  }
+  .content-top-wrapper ul li span.sunny-cloud {
+    margin: 5px auto 25px;
+  }
+  .content-top-wrapper ul li span.cloud-stats {
+    margin: 8px auto 0;
+  }
+  .content-top-wrapper ul li.mild-showers {
+    padding: 0 5px;
+  }
+  .content-top-wrapper ul li.mild-showers img {
+    height: 55px;
+    margin: 0 auto;
+  }
+}

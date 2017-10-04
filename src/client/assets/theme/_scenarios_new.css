@@ -1,0 +1,384 @@
+/*==============================================================================
+************************************Header Styles*******************************
+==============================================================================*/
+.navbar-wrapper {
+  margin: 0;
+  border: 0;
+  padding: 36px 0;
+  border-color: #e7e7e7;
+  background-color: transparent;
+}
+.navbar-wrapper .navbar-brand {
+  padding: 0 15px;
+}
+.navbar-wrapper .left-navbar-wrapper li {
+  border-right: 1px solid #36415c;
+}
+.navbar-wrapper .left-navbar-wrapper li a {
+  color: #e8e9eb;
+  padding: 0 20px;
+  font-size: 14px;
+  min-width: 165px;
+  text-align: center;
+}
+.navbar-wrapper .left-navbar-wrapper li a:hover,
+.navbar-wrapper .left-navbar-wrapper li a:focus {
+  color: #ffcc00;
+}
+.navbar-wrapper .left-navbar-wrapper li.active a {
+  color: #ffcc00;
+  background-color: transparent;
+}
+.navbar-wrapper .left-navbar-wrapper li.active a .img-white {
+  display: none;
+}
+.navbar-wrapper .left-navbar-wrapper li.active a .img-yellow {
+  display: block;
+}
+.navbar-wrapper .left-navbar-wrapper li.active a:hover,
+.navbar-wrapper .left-navbar-wrapper li.active a:focus {
+  color: #ffcc00;
+  background-color: transparent;
+}
+.navbar-wrapper .left-navbar-wrapper li.active a:hover .img-white,
+.navbar-wrapper .left-navbar-wrapper li.active a:focus .img-white {
+  display: none;
+}
+.navbar-wrapper .left-navbar-wrapper li.active a:hover .img-yellow,
+.navbar-wrapper .left-navbar-wrapper li.active a:focus .img-yellow {
+  display: block;
+}
+.navbar-wrapper .left-navbar-wrapper li.active:hover a,
+.navbar-wrapper .left-navbar-wrapper li.active:focus a {
+  color: #ffcc00;
+  background-color: transparent;
+}
+.navbar-wrapper .left-navbar-wrapper li.active:hover a .img-white,
+.navbar-wrapper .left-navbar-wrapper li.active:focus a .img-white {
+  display: none;
+}
+.navbar-wrapper .left-navbar-wrapper li.active:hover a .img-yellow,
+.navbar-wrapper .left-navbar-wrapper li.active:focus a .img-yellow {
+  display: block;
+}
+.navbar-wrapper .navbar-right {
+  margin-right: 5px;
+}
+.navbar-wrapper .navbar-right li a {
+  font-size: 16px;
+  color: #E8E9EB;
+}
+.navbar-wrapper .navbar-right li a:hover,
+.navbar-wrapper .navbar-right li a:focus {
+  color: #fff;
+}
+.navbar-wrapper .navbar-right li a img {
+  padding-right: 10px;
+}
+.navbar-wrapper .left-navbar-wrapper li a img {
+  margin: 0 auto;
+  max-width: 25px;
+  margin-bottom: 5px;
+}
+.navbar-wrapper .left-navbar-wrapper li a .img-white {
+  display: block;
+}
+.navbar-wrapper .left-navbar-wrapper li a .img-yellow {
+  display: none;
+}
+.navbar-wrapper .left-navbar-wrapper li a:hover .img-white,
+.navbar-wrapper .left-navbar-wrapper li a:focus .img-white {
+  display: none;
+}
+.navbar-wrapper .left-navbar-wrapper li a:hover .img-yellow,
+.navbar-wrapper .left-navbar-wrapper li a:focus .img-yellow {
+  display: block;
+}
+.navbar-wrapper .left-navbar-wrapper li:last-child {
+  border-right: 0;
+}
+.navbar-wrapper .navbar-nav > .open > a,
+.navbar-wrapper .navbar-nav > .open > a:focus,
+.navbar-wrapper .navbar-default .navbar-nav > .open > a:hover {
+  background-color: #253c5c;
+  color: #fff;
+}
+.navbar-wrapper .dropdown-menu {
+  background-color: transparent;
+}
+.navbar-wrapper .dropdown-menu > li > a {
+  font-size: 14px;
+}
+.navbar-wrapper .dropdown-menu > li > a:hover,
+.navbar-wrapper .dropdown-menu > li > a:focus {
+  color: #ffcc00;
+  background-color: transparent;
+}
+/*==============================================================================
+**************************  My Scenario Wrapper Styles  ************************
+==============================================================================*/
+.my-scenario-wrapper {
+  margin: 0 0 25px;
+  border-bottom: 1px solid #3d4f6b;
+}
+.my-scenario-wrapper ul {
+  margin: 0;
+}
+.my-scenario-wrapper ul li a {
+  color: #fff;
+  font-size: 14px;
+  padding: 10px 0;
+  margin: 0 20px 0 0;
+  display: inline-block;
+  position: relative;
+  font-family: 'roboto-regular';
+}
+.my-scenario-wrapper ul li.active a:after {
+  position: absolute;
+  content: '';
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #EEC004;
+}
+.scenarios-wrapper h2 {
+  color: #fff;
+  margin: 0 0 50px;
+  font-size: 16px;
+  font-family: 'roboto-regular';
+}
+.scenarios-wrapper h3 {
+  color: #fff;
+  margin: 0;
+  font-size: 14px;
+  font-family: 'roboto-regular';
+}
+.scenarios-wrapper h3 img {
+  width: 45px;
+  margin: 0 10px 0 0;
+  display: inline-block;
+}
+.scenarios-wrapper .scenarios-list-wrapper ul {
+  margin: 0 0 0 22px;
+  padding: 0 0 0 40px;
+}
+.scenarios-wrapper .scenarios-list-wrapper ul.custom-trigger-list {
+  margin: 0 10px 0 22px;
+  position: relative;
+  min-height: 130px;
+}
+.scenarios-wrapper .scenarios-list-wrapper ul.custom-trigger-list:before {
+  top: 15px;
+  left: 0;
+  height: 75%;
+  content: '';
+  position: absolute;
+  border-left: 1px solid #3d4f6b;
+}
+.scenarios-wrapper .scenarios-list-wrapper ul li {
+  padding: 0 0 15px;
+}
+.scenarios-wrapper .scenarios-list-wrapper ul li a {
+  color: #5d697d;
+  font-size: 12px;
+  transition: all 0.3s ease-in-out;
+  font-family: 'roboto-regular';
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+.scenarios-wrapper .scenarios-list-wrapper ul li a:hover,
+.scenarios-wrapper .scenarios-list-wrapper ul li a:focus {
+  color: #fff;
+}
+.scenarios-wrapper .scenarios-list-wrapper ul li a img {
+  width: 40px;
+  margin: 0 auto 10px;
+  display: inline-block;
+}
+.scenarios-wrapper .scenarios-list-wrapper ul li a i {
+  margin: 0 10px 0 0;
+}
+.scenarios-wrapper .scenarios-list-wrapper ul li.active a {
+  color: #fff;
+}
+.scenarios-wrapper .trigger-service-wrapper {
+  margin: 0 0 15px;
+  padding: 0 15px 0 45px;
+  min-height: 390px;
+  border-left: 1px solid #3d4f6b;
+}
+.scenarios-wrapper .trigger-service-wrapper h3 {
+  margin: 0 0 35px;
+}
+.scenarios-wrapper .trigger-service-wrapper h3 .description {
+  margin: 0 0 0 60px;
+  display: block;
+}
+.scenarios-wrapper .trigger-service-wrapper .btn-circle {
+  display: block;
+  width: 100%;
+  margin: 20px 0;
+  padding: 12px 10px;
+  font-weight: normal;
+  line-height: 1;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-align: center;
+  color: #fff;
+  font-family: 'roboto-regular';
+  font-size: 14px;
+  background-color: #bba729;
+  border: 2px solid #bba729;
+  border-radius: 0;
+  -moz-border-radius: 0;
+  transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -webkit-border-radius: 0;
+}
+.scenarios-wrapper .trigger-service-wrapper .btn-circle i {
+  margin: 0 5px 0 0;
+}
+.scenarios-wrapper .trigger-service-wrapper .btn-circle:hover,
+.scenarios-wrapper .trigger-service-wrapper .btn-circle:focus {
+  color: #fff;
+  border: 2px solid #bba729;
+  background-color: #bba729;
+}
+.scenarios-wrapper .trigger-list li {
+  width: 25%;
+  float: left;
+  padding: 15px;
+  border-right: 1px solid #3d4f6b;
+  border-bottom: 1px solid #3d4f6b;
+}
+.scenarios-wrapper .trigger-list li:nth-child(4n) {
+  border-right: 0;
+}
+.scenarios-wrapper .trigger-list li a {
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+.scenarios-wrapper .trigger-list li a img {
+  width: 40px;
+  margin: 0 auto 10px;
+  display: inline-block;
+}
+.scenarios-wrapper .trigger-list li a label {
+  cursor: pointer;
+  font-size: 14px;
+  font-family: 'roboto-regular';
+}
+.scenarios-wrapper .trigger-list li a span {
+  font-size: 14px;
+  font-family: 'roboto-regular';
+}
+.scenarios-wrapper .trigger-list li:first-child.text-left {
+  border: 0;
+  border-bottom: 1px solid #3d4f6b;
+}
+.scenarios-wrapper .trigger-list li.text-left {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid #3d4f6b;
+}
+.scenarios-wrapper .trigger-list li.text-left ul li {
+  border: 0;
+  width: 100%;
+  border-bottom: 1px solid #3d4f6b;
+}
+.scenarios-wrapper .trigger-list li label {
+  color: #fff;
+  display: block;
+  opacity: 0.7;
+  font-size: 14px;
+  font-weight: normal;
+  font-family: 'roboto-regular';
+}
+.scenarios-wrapper .trigger-list li input {
+  height: 34px;
+  margin: 0 0 15px;
+  border: 0;
+  box-shadow: none;
+  border-bottom: 1px solid #3d4f6b;
+  -moz-box-shadow: none;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+}
+.my-scenarios-wrapper {
+  /*--  Scenarios Global Styles  --*/
+}
+.my-scenarios-wrapper .timer {
+  border-color: #1b1a1a !important;
+  background-color: #1b1a1a !important;
+}
+.my-scenarios-wrapper .lifx-light {
+  border-color: #450099 !important;
+  background-color: #450099 !important;
+}
+.my-scenarios-wrapper .sms {
+  border-color: #2ebd59 !important;
+  background-color: #2ebd59 !important;
+}
+.my-scenarios-wrapper .facebook {
+  border-color: #335191 !important;
+  background-color: #335191 !important;
+}
+.my-scenarios-wrapper .nest {
+  border-color: #1ab7ea !important;
+  background-color: #1ab7ea !important;
+}
+.my-scenarios-wrapper .email {
+  border-color: #ef672f !important;
+  background-color: #ef672f !important;
+}
+.my-scenarios-wrapper .twitter {
+  border-color: #55c1e7 !important;
+  background-color: #55c1e7 !important;
+}
+.my-scenarios-wrapper .weather {
+  border-color: #359ad5 !important;
+  background-color: #359ad5 !important;
+}
+.my-scenarios-wrapper .woohoo-cam {
+  border-color: #fc0 !important;
+  background-color: #fc0 !important;
+}
+.my-scenarios-wrapper .amazon-echo {
+  border-color: #00ADCF !important;
+  background-color: #00ADCF !important;
+}
+.my-scenarios-wrapper .fitbit {
+  border-color: #1CB0B9 !important;
+  background-color: #1CB0B9 !important;
+}
+.my-scenarios-wrapper .phone {
+  border-color: #C91B18 !important;
+  background-color: #C91B18 !important;
+}
+.my-scenarios-wrapper .wemo-switch {
+  background-color: #7FD350 !important;
+}
+.my-scenarios-wrapper .philips-hue {
+  border-color: #2E0851 !important;
+  background-color: #2E0851 !important;
+}
+.my-scenarios-wrapper .alexa {
+  border-color: #0068A8 !important;
+  background-color: #0068A8 !important;
+}
+.my-scenarios-wrapper .google-calendar {
+  border-color: #007ee5 !important;
+  background-color: #007ee5 !important;
+}
+.my-scenarios-wrapper .dropbox {
+  border-color: #007ee5 !important;
+  background-color: #007ee5 !important;
+}
+.my-scenarios-wrapper .youtube {
+  border-color: #e22c28 !important;
+  background-color: #e22c28 !important;
+}

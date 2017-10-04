@@ -1,0 +1,54 @@
+.main-container.jp-main-container .custom-navbar .navbar-nav > li > a {
+  font-size: 21px;
+}
+.main-container.jp-main-container .content-top-wrapper ul li {
+  position: relative;
+}
+.main-container.jp-main-container .content-top-wrapper ul li:first-child {
+  padding: 30px 15px 5px;
+}
+.main-container.jp-main-container .content-top-wrapper ul li:first-child span.blue {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.main-container.jp-main-container .content-top-wrapper ul li.mild-showers img {
+  width: 40px;
+  margin: 19px auto;
+}
+.main-container.jp-main-container .content-top-wrapper ul li.mild-showers .mild-showers-text span {
+  display: inline-block;
+  margin: 0 0 0 10px;
+}
+.main-container.jp-main-container .content-middle-wrapper ul li p {
+  font-size: 12px;
+}
+.main-container.jp-main-container .divider-woohoo {
+  width: 25%;
+}
+.main-container.jp-main-container .divider-woohoo ul li {
+  width: 50%;
+  padding: 12px 0;
+  text-align: center;
+  float: left;
+}
+.main-container.jp-main-container .divider-woohoo ul li:first-of-type {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+.main-container.jp-main-container .divider-woohoo ul li:nth-child(2) {
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+.main-container.jp-main-container .divider-woohoo ul li:last-of-type {
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+}
+.main-container.jp-main-container .divider-woohoo ul li h3 {
+  font-size: 15px;
+}
+.main-container.jp-main-container .divider-woohoo ul li p {
+  font-size: 11px;
+}
+.main-container.jp-main-container .content-bottom-wrapper .left-panel .security-privacy {
+  width: 65px;
+  height: 75px;
+}

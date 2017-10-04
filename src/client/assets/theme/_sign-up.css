@@ -1,0 +1,298 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 8 Aug, 2016, 11:30:28 AM
+    Author     : Ahex
+*/
+.signup-form-wrapper {
+  /*-- Headings Styles  --*/
+  /*--  Progressbar Styles  --*/
+}
+.signup-form-wrapper #signUpForm {
+  margin: 0 auto 50px;
+  position: relative;
+  max-width: 568px;
+  text-align: center;
+  /*--  Hide All Except First Fieldset  --*/
+  /*--  Input Styles  --*/
+  /*--  Button Styles  --*/
+}
+.signup-form-wrapper #signUpForm fieldset {
+  width: 400px;
+  margin: 0 85px;
+  padding: 0 0 25px;
+  position: absolute;
+}
+.signup-form-wrapper #signUpForm fieldset:not(:first-of-type) {
+  display: none;
+}
+.signup-form-wrapper #signUpForm .form-control option {
+  padding: 10px 15px;
+}
+.signup-form-wrapper #signUpForm textarea.form-control {
+  height: auto;
+  resize: none;
+  padding: 18px 15px 15px 50px;
+}
+.signup-form-wrapper #signUpForm .img-circle {
+  width: 120px;
+  border: 1px solid #fc0;
+  padding: 3px;
+}
+.signup-form-wrapper #signUpForm .btn-yellow {
+  color: #1c3151;
+  width: 150px;
+  font-size: 22px;
+  font-family: 'roboto-regular', sans-serif;
+}
+.signup-form-wrapper #signUpForm .btn-yellow.previous {
+  margin: 0 30px 0 0;
+}
+.signup-form-wrapper #signUpForm .radio-inline-wrapper {
+  width: 100%;
+  margin: 0 auto 25px;
+}
+.signup-form-wrapper #signUpForm .radio-inline-wrapper .radio-inline {
+  width: auto;
+  margin: 0;
+  padding: 0 15px;
+  min-width: 100px;
+  line-height: 58px;
+  background-color: #c2c2c2;
+  transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+.signup-form-wrapper #signUpForm .radio-inline-wrapper .radio-inline:first-of-type {
+  border-radius: 6px 0 0 6px;
+  -moz-border-radius: 6px 0 0 6px;
+  -webkit-border-radius: 6px 0 0 6px;
+}
+.signup-form-wrapper #signUpForm .radio-inline-wrapper .radio-inline:last-of-type {
+  margin: 0 0 0 -4px;
+  border-radius: 0 6px 6px 0;
+  -moz-border-radius: 0 6px 6px 0;
+  -webkit-border-radius: 0 6px 6px 0;
+}
+.signup-form-wrapper #signUpForm .radio-inline-wrapper input[type=radio] {
+  width: 0;
+  height: 0;
+  margin: 0;
+  opacity: 0;
+  padding: 0;
+  position: absolute;
+}
+.signup-form-wrapper #signUpForm .radio-inline-wrapper input[type=radio]:first-of-type {
+  left: 0;
+}
+.signup-form-wrapper #signUpForm .radio-inline-wrapper input[type=radio]:last-of-type {
+  right: 0;
+}
+.signup-form-wrapper #signUpForm .radio-inline-wrapper input[type=radio]:checked + label {
+  background-color: #ffcc00;
+}
+.signup-form-wrapper .fs-title {
+  color: #33ccff;
+  margin: 0 0 20px;
+  font-size: 22px;
+  font-family: 'roboto-regular', sans-serif;
+}
+.signup-form-wrapper .fs-title .help-text {
+  color: #fff;
+  margin: 15px 0 30px;
+  display: block;
+  font-size: 16px;
+  font-family: 'roboto-regular', sans-serif;
+}
+.signup-form-wrapper .fs-subtitle {
+  color: #fff;
+  margin: 0 0 30px;
+  font-size: 16px;
+  font-family: 'roboto-regular', sans-serif;
+  font-weight: normal;
+}
+.signup-form-wrapper #progressbar {
+  margin: 0 0 50px;
+  overflow: hidden;
+  counter-reset: step;
+}
+.signup-form-wrapper #progressbar li {
+  color: #fff;
+  width: 33.33%;
+  float: left;
+  font-size: 16px;
+  position: relative;
+  font-family: "roboto-regular", sans-serif;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+.signup-form-wrapper #progressbar li:before {
+  color: #1c294b;
+  width: 30px;
+  height: 30px;
+  display: block;
+  margin: 0 auto 5px auto;
+  content: counter(step);
+  font-size: 18px;
+  background: #fff;
+  line-height: 30px;
+  border-radius: 2px;
+  counter-increment: step;
+}
+.signup-form-wrapper #progressbar li:after {
+  top: 15px;
+  left: -50%;
+  width: 100%;
+  height: 2px;
+  content: '';
+  z-index: -1;
+  position: absolute;
+  background: #fff;
+}
+.signup-form-wrapper #progressbar li:first-child:after {
+  content: none;
+}
+.signup-form-wrapper #progressbar li.active {
+  color: #ffcc00;
+}
+.signup-form-wrapper #progressbar li.active:before,
+.signup-form-wrapper #progressbar li.active:after {
+  color: #1c294b;
+  background: #ffcc00;
+}
+/*--  Upload Modal Styles*/
+.upload-modal .modal-dialog .modal-content {
+  border: 0 none;
+  box-shadow: none;
+  border-radius: 6px;
+  background-color: #fff;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+}
+.upload-modal .modal-dialog .modal-content .modal-header {
+  padding: 25px;
+  text-align: center;
+}
+.upload-modal .modal-dialog .modal-content .modal-header .modal-title {
+  color: #1d2a4c;
+  font-size: 20px;
+  font-family: "roboto-regulr", sans-serif;
+}
+.upload-modal .modal-dialog .modal-content .modal-header button.close {
+  color: #1d2a4c;
+  font-size: 21px;
+}
+.upload-modal .modal-dialog .modal-content .modal-body {
+  text-align: center;
+  font-family: "roboto-light", sans-serif;
+}
+.upload-modal .modal-dialog .modal-content .modal-body a {
+  width: 160px;
+  height: 160px;
+  margin: 0 0 25px;
+  display: inline-block;
+  padding: 22px 0;
+  background: rgba(0, 0, 0, 0) url("../images/circle-icon.png") repeat scroll 0 0 / cover;
+}
+.upload-modal .modal-dialog .modal-content .modal-body a:hover,
+.upload-modal .modal-dialog .modal-content .modal-body a:focus {
+  text-decoration: none;
+}
+.upload-modal .modal-dialog .modal-content .modal-body a span {
+  color: #1d2a4c;
+  display: block;
+}
+.upload-modal .modal-dialog .modal-content .modal-body p {
+  color: #1d2a4c;
+  margin: 0 0 25px;
+}
+.upload-modal .modal-dialog .modal-content .modal-body p span {
+  width: 15px;
+  margin: 10px auto;
+  display: block;
+}
+.upload-modal .modal-dialog .modal-content .modal-body .btn-yellow {
+  width: 192px;
+  height: 56px;
+  margin: 0 auto;
+}
+/*==============================================================================
+**********************      Media Style For the Site     ***********************
+==============================================================================*/
+@media (min-width: 320px) and (max-width: 1399px) {
+  .logo-wrapper.logo-signup {
+    margin: 50px auto;
+  }
+  .signup-form-wrapper #progressbar {
+    margin: 0 0 35px;
+  }
+  .signup-form-wrapper #progressbar li {
+    font-size: 13px;
+    line-height: 18px;
+  }
+  .signup-form-wrapper #progressbar li:before {
+    width: 20px;
+    height: 20px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .signup-form-wrapper #progressbar li:after {
+    top: 9px;
+  }
+  .signup-form-wrapper #signUpForm fieldset {
+    width: 350px;
+    margin: 0 110px;
+  }
+  .signup-form-wrapper #signUpForm .radio-inline-wrapper {
+    margin: 0 auto 25px;
+  }
+  .signup-form-wrapper #signUpForm .radio-inline-wrapper .btn-yellow {
+    line-height: 50px;
+  }
+  .signup-form-wrapper #signUpForm textarea.form-control {
+    padding: 12px 15px 10px 50px;
+  }
+  .signup-form-wrapper #signUpForm .btn-yellow {
+    width: 100px;
+    height: 50px;
+    font-size: 16px;
+    line-height: 48px;
+  }
+  .signup-form-wrapper #signUpForm .img-circle {
+    width: 80px;
+  }
+  .signup-form-wrapper .fs-title {
+    margin: 0 0 15px;
+    font-size: 18px;
+  }
+  .signup-form-wrapper .fs-title .help-text {
+    margin: 15px 0;
+    font-size: 13px;
+  }
+  .signup-form-wrapper .fs-subtitle {
+    margin: 0 0 20px;
+    font-size: 13px;
+  }
+}
+@media (min-width: 320px) and (max-width: 1199px) {
+  .signup-form-wrapper #signUpForm {
+    height: 100vh !important;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .signup-form-wrapper #signUpForm fieldset {
+    width: 100%;
+    margin: 0;
+  }
+  .signup-form-wrapper #progressbar li {
+    font-size: 13px;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .signup-form-wrapper #signUpForm .radio-inline-wrapper .radio-inline {
+    line-height: 46px;
+  }
+}
